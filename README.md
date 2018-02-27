@@ -20,3 +20,4 @@ column 6: chemical shift of the backbone C'
 column 7: Secondary structure type of this residue
 column 7: Phi angle of this residue
 column 7: Psi angle of this residue
+
