@@ -17,7 +17,7 @@ column 2: the chemical shift value of the H on the backbone N
 
 column 3: the chemical shift value of the backbone N
 
-column 4: the chemical shift value of the proton on the backbone C_Alpha
+column 4: the chemical shift value of the H on the backbone C_Alpha
 
 column 5: the chemical shift value of the backbone C_Alpha
 
