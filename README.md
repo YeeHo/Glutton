@@ -16,7 +16,7 @@ Step4. change the input.txt to set parameters to determine the candidate pool
         False          # use log of the densisty distributions of Phi and Psi 
                        # angles as probability function to generate angles
 
-        NOTE: if there is insufficient data to generate distributions, the choice can be 
+        NOTE: if there are insufficient data to generate distributions, the choice can be 
         [1]. use low resolution database - LEVEL3;            
         [2]. increase the selected width of the chemical shift distribution. 
  
