@@ -53,7 +53,9 @@ Part 3 of 3. Protein Chemical Shift - Structure Database
 All database files 
 
 LEVEL1_ALL_20180116.dat
+
 LEVEL2_ALL_20180116.dat
+
 LEVEL3_ALL_20180116.dat
 
 are in csv format. 
