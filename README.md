@@ -26,7 +26,8 @@ Step5. run script as following:
  
 Part 2 of 3. Libraries needed to run Glutton script
 
-The Glutton script has been tested using Anaconda python distribution version 3.6 
+The Glutton script has been tested using Anaconda python distribution version 3.6.
+
 The Anaconda python package can be downloaded for free at: https://www.anaconda.com/download
 
 Additional libraries needed to run Glutton script:
