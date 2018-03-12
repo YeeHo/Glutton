@@ -76,8 +76,8 @@ column 6: the chemical shift value of the backbone C'
 
 column 7: Secondary structure type of this residue
 
-column 7: Phi angle of this residue
+column 8: Phi angle of this residue
 
-column 7: Psi angle of this residue
+column 9: Psi angle of this residue
 
 NOTE: if the chemical shift value of a atom is not avaliable, Glutton sets it as 9999.0. 
