@@ -33,13 +33,13 @@ Additional libraries needed to run Glutton script:
 
 [1]. Install Biopython
 
-  conda install biopython (or use "pip install biopython")
+        conda install biopython (or use "pip install biopython")
   
   Biopython webpage: http://biopython.org/
   
 [2]. Install PeptideBuilder
 
-  pip install PeptideBuilder
+        pip install PeptideBuilder
 
   PeptideBuilder webpage: https://github.com/mtien/PeptideBuilder
   Reference:
