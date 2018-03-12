@@ -24,7 +24,7 @@ Step5. run script as following:
 
     python Glutton_R1.0.py
  
-Part 2 of 3. Structure ensemble construction based on chemical shifts
+Part 2 of 3. Libraries needed to run Glutton script
 
 The Glutton script has been tested using Anaconda python distribution version 3.6 
 The Anaconda python package can be downloaded for free at: https://www.anaconda.com/download
@@ -42,6 +42,7 @@ Additional libraries needed to run Glutton script:
         pip install PeptideBuilder
 
   PeptideBuilder webpage: https://github.com/mtien/PeptideBuilder
+  
   Reference:
   M. Z. Tien, D. K. Sydykova, A. G. Meyer, C. O. Wilke (2013). PeptideBuilder:
   A simple Python library to generate model peptides. PeerJ 1:e80.
