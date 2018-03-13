@@ -1,5 +1,5 @@
 # Glutton
-Please take 5 minutes to read this brief readme file before running Glutton script.
+Please take 5 minutes to read this brief readme file before running the Glutton script. 
 
 Part 1 of 4. Introduction of Glutton
 
@@ -26,7 +26,7 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         Step2. If there are no subfolders named "cs" and "PDBOUT" within this folder, create them before 
                 running Glutton script.
 
-        Step3. Put input chemical shift file (NMRSTAR 3.0 format) in the subfolder "cs"
+        Step3. Put the input chemical shift file (in NMRSTAR 3.0 format) in the subfolder "cs"
 
         Step4. change the input.txt to set parameters to determine the candidate pool
 
