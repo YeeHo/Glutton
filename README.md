@@ -71,11 +71,11 @@ Part 4 of 4. Protein Chemical Shift - Structure Database (Glutton database)
 
         All database files 
 
-                LEVEL1_ALL_20180116.dat
+                LEVEL1_ALL_20180116.dat  (high-resolution)
 
-                LEVEL2_ALL_20180116.dat
+                LEVEL2_ALL_20180116.dat  (medium-resolution)
 
-                LEVEL3_ALL_20180116.dat
+                LEVEL3_ALL_20180116.dat  (low-resolution)
 
         are in csv format. 
 
