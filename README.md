@@ -49,7 +49,7 @@ Part 3 of 4. Python libraries needed to run Glutton script
 
         The Anaconda python package can be downloaded for free at: https://www.anaconda.com/download
 
-        Additional libraries needed to run Glutton script:
+        Python libraries needed to run Glutton script:
 
         [1]. Install Biopython
 
@@ -66,6 +66,16 @@ Part 3 of 4. Python libraries needed to run Glutton script
         Reference:
         M. Z. Tien, D. K. Sydykova, A. G. Meyer, C. O. Wilke (2013). PeptideBuilder:
         A simple Python library to generate model peptides. PeerJ 1:e80.
+
+        [3]. Install nmrstarlib
+        
+                pip install nmrstarlib
+
+        nmrstarlib webpage: https://github.com/MoseleyBioinformaticsLab/nmrstarlib        
+
+        [4]. Install other python libraries such as numpy, pandas if you don't have them.
+        
+                pip install numpy pandas
 
 Part 4 of 4. Protein Chemical Shift - Structure Database (Glutton database)
 
