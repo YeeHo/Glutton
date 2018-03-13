@@ -67,7 +67,7 @@ Part 3 of 4. Python libraries needed to run Glutton script
         M. Z. Tien, D. K. Sydykova, A. G. Meyer, C. O. Wilke (2013). PeptideBuilder:
         A simple Python library to generate model peptides. PeerJ 1:e80.
 
-Part 4 of 4. Protein Chemical Shift - Structure Database 
+Part 4 of 4. Protein Chemical Shift - Structure Database (Glutton database)
 
         All database files 
 
@@ -99,4 +99,4 @@ Part 4 of 4. Protein Chemical Shift - Structure Database
 
         column 9: Psi angle of this residue
 
-        NOTE: if the chemical shift value of a atom is not avaliable, Glutton sets it as 9999.0. 
+        NOTE: if the chemical shift value of an atom is not available, Glutton sets it as 9999.0. 
