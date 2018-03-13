@@ -3,9 +3,21 @@ Part 1 of 4. Introduction of Glutton
 
         The Glutton database that we have developed is specifically designed to fill a large void
         currently existing in the bioinformatics tools for the structural analysis of intrinsically
-        disordered proteins (IDPs) based on experimental information, namely NMR.
+        disordered proteins (IDPs) based on experimental information, namely NMR. Our Glutton database 
+        contains a total of 5,270 proteins. Glutton database has a hierarchical system of three tiers
+        (levels of resolution) that permit customization of the database for specific applications: 
+        for structural ensembles of IDPs, or for protein structure determination and prediction of 
+        well folded structures. And, most importantly, Glutton changes the structure classification 
+        paradigm from the conventional one (one set of chemical shifts to one structure) to one that 
+        interprets chemical shifts as ensemble averages, and thus calculates conformational distributions 
+        from chemical shift datasets. These distributions permit the quick determination of maximally broad 
+        structural ensembles consistent with the data, and thus optimal sampling of the conformational space 
+        available to the IDP. These ensembles provide a realistic description of the conformational 
+        heterogeneity and structural propensities of IDPs, but they can also be used as starting point 
+        for the refinement of protein structure determination (adding additional experimental information)
+        or protein prediction (incorporating a molecular force-field).
 
-Part 2 of 4. Use Glutton script to generate structure ensemble based on chemical shifts
+Part 2 of 4. Use Glutton script to generate structure ensembles based on chemical shifts
 
         Step1. Put database files (LEVEL*.dat), Glutton_R1.0.py and input.txt files in the same folder.
 
@@ -31,7 +43,7 @@ Part 2 of 4. Use Glutton script to generate structure ensemble based on chemical
 
                 python Glutton_R1.0.py
  
-Part 3 of 4. Libraries needed to run Glutton script
+Part 3 of 4. Python libraries needed to run Glutton script
 
         The Glutton script has been tested using Anaconda python distribution version 3.6.
 
