@@ -1,7 +1,9 @@
 # Glutton
 Part 1 of 4. Introduction of Glutton
 
-        The Glutton database that we have developed is specifically designed to fill a large void currently existing in the bioinformatics tools for the structural analysis of intrinsically disordered proteins (IDPs) based on experimental information, namely NMR.
+        The Glutton database that we have developed is specifically designed to fill a large void
+        currently existing in the bioinformatics tools for the structural analysis of intrinsically
+        disordered proteins (IDPs) based on experimental information, namely NMR.
 
 Part 2 of 4. Use Glutton script to generate structure ensemble based on chemical shifts
 
