@@ -1,0 +1,1430 @@
+data_4108
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                    entry_information
+   _Entry.Sf_framecode                   entry_information
+   _Entry.ID                             4108
+   _Entry.Title                         
+;
+Acid/Urea denatured cold shock protein A (CspA)
+;
+   _Entry.Type                           macromolecule
+   _Entry.Version_type                   original
+   _Entry.Submission_date                1998-02-16
+   _Entry.Accession_date                 1998-02-17
+   _Entry.Last_release_date              1998-03-04
+   _Entry.Original_release_date          1998-03-04
+   _Entry.Origination                    author
+   _Entry.NMR_STAR_version               3.1.1.61
+   _Entry.Original_NMR_STAR_version      2.1
+   _Entry.Experimental_method            NMR
+   _Entry.Experimental_method_subtype    .
+   _Entry.Details                       
+;
+NMR assignments for acid/urea denatured (pH 2.7/ 6M urea), temperature = 20 C) 
+cold shock protein A.  Residual structure in the acid denatured protein induces 
+aggregation, and eventually fibril formation.  NMR experiments aimed at 
+understanding the mechanisms of aggregation & polymerization are in progress.  
+NMR assignments for acid denatured CspA made use of data for the acid/urea denatured 
+protein (pH 2.7/ 6M urea), to overcome problems with broad lines in the acid denatured 
+state.  The acid & acid/urea denatured forms of the protein are in fast exchange.  
+NMR assignments for the acid denatured protein have been deposited in a separate entry.     
+Denatured (e.g. non-native) protein.
+;
+   _Entry.BMRB_internal_directory_name   .
+
+   loop_
+      _Entry_author.Ordinal
+      _Entry_author.Given_name
+      _Entry_author.Family_name
+      _Entry_author.First_initial
+      _Entry_author.Middle_initials
+      _Entry_author.Family_title
+      _Entry_author.Entry_ID
+
+      1 Andrei Alexandrescu  . T. . 4108 
+      2 K.     Rathgeb-Szabo . .  . 4108 
+
+   stop_
+
+   loop_
+      _Data_set.Type
+      _Data_set.Count
+      _Data_set.Entry_ID
+
+      assigned_chemical_shifts 2 4108 
+
+   stop_
+
+   loop_
+      _Datum.Type
+      _Datum.Count
+      _Datum.Entry_ID
+
+      '13C chemical shifts' 138 4108 
+      '15N chemical shifts'  72 4108 
+      '1H chemical shifts'   72 4108 
+
+   stop_
+
+   loop_
+      _Release.Release_number
+      _Release.Format_type
+      _Release.Format_version
+      _Release.Date
+      _Release.Submission_date
+      _Release.Type
+      _Release.Author
+      _Release.Detail
+      _Release.Entry_ID
+
+      1 . . 1998-03-04 1998-02-17 original author . 4108 
+
+   stop_
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+      BMRB 4107 'chemical shifts for CspA in the acid denatured state' 4108 
+
+   stop_
+
+save_
+
+
+###############
+#  Citations  #
+###############
+
+save_entry_citation
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 entry_citation
+   _Citation.Entry_ID                     4108
+   _Citation.ID                           1
+   _Citation.Class                       'entry citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              98356294
+   _Citation.DOI                          .
+   _Citation.PubMed_ID                    .
+   _Citation.Full_citation               
+;
+   
+ Alexandrescu, A. T., and Rathgeb-Szabo, K., "NMR Assignments for Acid-Denatured 
+ Cold Shock Protein A," J. Biomol. NMR 11, 461-462 (1998).
+;
+   _Citation.Title                       'NMR Assignments for Acid-Denatured Cold Shock Protein A'
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev              'J. Biomol. NMR'
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               11
+   _Citation.Journal_issue                4
+   _Citation.Journal_ASTM                 .
+   _Citation.Journal_ISSN                 .
+   _Citation.Journal_CSD                  .
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   461
+   _Citation.Page_last                    462
+   _Citation.Year                         1998
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1 Andrei Alexandrescu  . T. . 4108 1 
+      2 K.     Rathgeb-Szabo . .  . 4108 1 
+
+   stop_
+
+   loop_
+      _Citation_keyword.Keyword
+      _Citation_keyword.Entry_ID
+      _Citation_keyword.Citation_ID
+
+       aggregation       4108 1 
+       CspA              4108 1 
+       CspA-Urea         4108 1 
+      'fibril formation' 4108 1 
+      'protein folding'  4108 1 
+
+   stop_
+
+save_
+
+
+save_citation_one
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 citation_one
+   _Citation.Entry_ID                     4108
+   _Citation.ID                           2
+   _Citation.Class                       'reference citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.DOI                          .
+   _Citation.PubMed_ID                    8589602
+   _Citation.Full_citation               
+;
+Wishart, D. S., Bigam, C. G., Yao J., Abildgaard, F., Dyson, H. J., 
+Oldfield, E., Markley, J. L., Sykes, B. D., "1H, 13C and 15N Chemical Shift Referencing
+in Biomolecular NMR," J. Biomol. NMR 6, 135-140 (1995).
+;
+   _Citation.Title                       '1H, 13C and 15N chemical shift referencing in biomolecular NMR.'
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev              'J. Biomol. NMR'
+   _Citation.Journal_name_full           'Journal of biomolecular NMR'
+   _Citation.Journal_volume               6
+   _Citation.Journal_issue                2
+   _Citation.Journal_ASTM                 .
+   _Citation.Journal_ISSN                 0925-2738
+   _Citation.Journal_CSD                  .
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   135
+   _Citation.Page_last                    140
+   _Citation.Year                         1995
+   _Citation.Details                     
+;
+A considerable degree of variability exists in the way that 1H, 13C and 15N
+chemical shifts are reported and referenced for biomolecules. In this article
+we explore some of the reasons for this situation and propose guidelines for
+future chemical shift referencing and for conversion from many common 1H, 13C
+and 15N chemical shift standards, now used in biomolecular NMR, to those
+proposed here.
+;
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1 'D S' Wishart    D. S. . 4108 2 
+      2 'C G' Bigam      C. G. . 4108 2 
+      3  J    Yao        J. .  . 4108 2 
+      4  F    Abildgaard F. .  . 4108 2 
+      5 'H J' Dyson      H. J. . 4108 2 
+      6  E    Oldfield   E. .  . 4108 2 
+      7 'J L' Markley    J. L. . 4108 2 
+      8 'B D' Sykes      B. D. . 4108 2 
+
+   stop_
+
+save_
+
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_system_CspA-Urea
+   _Assembly.Sf_category                       assembly
+   _Assembly.Sf_framecode                      system_CspA-Urea
+   _Assembly.Entry_ID                          4108
+   _Assembly.ID                                1
+   _Assembly.Name                              CspA
+   _Assembly.BMRB_code                         .
+   _Assembly.Number_of_components              .
+   _Assembly.Organic_ligands                   .
+   _Assembly.Metal_ions                        .
+   _Assembly.Non_standard_bonds                .
+   _Assembly.Ambiguous_conformational_states   .
+   _Assembly.Ambiguous_chem_comp_sites         .
+   _Assembly.Molecules_in_chemical_exchange    .
+   _Assembly.Paramagnetic                      no
+   _Assembly.Thiol_state                       .
+   _Assembly.Molecular_mass                    .
+   _Assembly.Enzyme_commission_number          .
+   _Assembly.Details                           .
+   _Assembly.DB_query_date                     .
+   _Assembly.DB_query_revised_last_date        .
+
+   loop_
+      _Assembly_type.Type
+      _Assembly_type.Entry_ID
+      _Assembly_type.Assembly_ID
+
+      monomer 4108 1 
+
+   stop_
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+      1 CspA 1 $CspA . . . denatured . . . . . 4108 1 
+
+   stop_
+
+   loop_
+      _Assembly_db_link.Author_supplied
+      _Assembly_db_link.Database_code
+      _Assembly_db_link.Accession_code
+      _Assembly_db_link.Entry_mol_code
+      _Assembly_db_link.Entry_mol_name
+      _Assembly_db_link.Entry_experimental_method
+      _Assembly_db_link.Entry_structure_resolution
+      _Assembly_db_link.Entry_relation_type
+      _Assembly_db_link.Entry_details
+      _Assembly_db_link.Entry_ID
+      _Assembly_db_link.Assembly_ID
+
+      yes PDB 1MJC . 'Major Cold Shock Protein 7.4 (Cspa (Cs 7.4)) Of (Escherichia Coli)'               . . . . 4108 1 
+      yes PDB 3MEF . 'A Chain A, Major Cold-Shock Protein From Escherichia Coli Solution Nmr Structure' . . . . 4108 1 
+
+   stop_
+
+   loop_
+      _Assembly_common_name.Name
+      _Assembly_common_name.Type
+      _Assembly_common_name.Entry_ID
+      _Assembly_common_name.Assembly_ID
+
+      CspA abbreviation 4108 1 
+      CspA system       4108 1 
+
+   stop_
+
+   loop_
+      _Assembly_bio_function.Biological_function
+      _Assembly_bio_function.Entry_ID
+      _Assembly_bio_function.Assembly_ID
+
+      'transcription regulator' 4108 1 
+
+   stop_
+
+save_
+
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_CspA
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      CspA
+   _Entity.Entry_ID                          4108
+   _Entity.ID                                1
+   _Entity.BMRB_code                         .
+   _Entity.Name                             'Cold shock protein A'
+   _Entity.Type                              polymer
+   _Entity.Polymer_common_type               .
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_type_details              .
+   _Entity.Polymer_strand_ID                 .
+   _Entity.Polymer_seq_one_letter_code_can   .
+   _Entity.Polymer_seq_one_letter_code      
+;
+MSGKMTGIVKWFNADKGFGF
+ITPDDGSKDVFVHFSAIQND
+GYKSLDEGQKVSFTIESGAK
+GPAAGNVTSL
+;
+   _Entity.Target_identifier                 .
+   _Entity.Polymer_author_defined_seq        .
+   _Entity.Polymer_author_seq_details        .
+   _Entity.Ambiguous_conformational_states   .
+   _Entity.Ambiguous_chem_comp_sites         .
+   _Entity.Nstd_monomer                      .
+   _Entity.Nstd_chirality                    .
+   _Entity.Nstd_linkage                      .
+   _Entity.Nonpolymer_comp_ID                .
+   _Entity.Nonpolymer_comp_label             .
+   _Entity.Number_of_monomers                70
+   _Entity.Number_of_nonpolymer_components   .
+   _Entity.Paramagnetic                      .
+   _Entity.Thiol_state                       .
+   _Entity.Src_method                        .
+   _Entity.Parent_entity_ID                  .
+   _Entity.Fragment                          .
+   _Entity.Mutation                          .
+   _Entity.EC_number                         .
+   _Entity.Calc_isoelectric_point            .
+   _Entity.Formula_weight                    7400
+   _Entity.Formula_weight_exptl              .
+   _Entity.Formula_weight_exptl_meth         .
+   _Entity.Details                           .
+   _Entity.DB_query_date                     .
+   _Entity.DB_query_revised_last_date        2015-11-25
+
+   loop_
+      _Entity_db_link.Ordinal
+      _Entity_db_link.Author_supplied
+      _Entity_db_link.Database_code
+      _Entity_db_link.Accession_code
+      _Entity_db_link.Entry_mol_code
+      _Entity_db_link.Entry_mol_name
+      _Entity_db_link.Entry_experimental_method
+      _Entity_db_link.Entry_structure_resolution
+      _Entity_db_link.Entry_relation_type
+      _Entity_db_link.Entry_details
+      _Entity_db_link.Chimera_segment_ID
+      _Entity_db_link.Seq_query_to_submitted_percent
+      _Entity_db_link.Seq_subject_length
+      _Entity_db_link.Seq_identity
+      _Entity_db_link.Seq_positive
+      _Entity_db_link.Seq_homology_expectation_val
+      _Entity_db_link.Seq_align_begin
+      _Entity_db_link.Seq_align_end
+      _Entity_db_link.Seq_difference_details
+      _Entity_db_link.Seq_alignment_details
+      _Entity_db_link.Entry_ID
+      _Entity_db_link.Entity_ID
+
+       1 no BMRB      4107 . "Cold shock protein A"                                                                                              . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+       2 no BMRB      4296 . "Cold shock protein A"                                                                                              . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+       3 no PDB  1MJC       . "Crystal Structure Of Cspa, The Major Cold Shock Protein Of Escherichia Coli"                                       . . . . .  98.57  69 100.00 100.00 1.89e-40 . . . . 4108 1 
+       4 no PDB  2BH8       . "Combinatorial Protein 1b11"                                                                                        . . . . .  50.00 101 100.00 100.00 5.60e-15 . . . . 4108 1 
+       5 no PDB  2L15       . "Solution Structure Of Cold Shock Protein Cspa Using Combined Nmr And Cs-Rosetta Method"                            . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+       6 no PDB  3MEF       . "Major Cold-Shock Protein From Escherichia Coli Solution Nmr Structure"                                             . . . . .  97.14  69 100.00 100.00 7.03e-40 . . . . 4108 1 
+       7 no DBJ  BAB37864   . "cold shock protein 7.4 [Escherichia coli O157:H7 str. Sakai]"                                                      . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+       8 no DBJ  BAE77739   . "major cold shock protein [Escherichia coli str. K12 substr. W3110]"                                                . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+       9 no DBJ  BAG79354   . "cold shock protein [Escherichia coli SE11]"                                                                        . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      10 no DBJ  BAH65698   . "cold shock protein [Klebsiella pneumoniae subsp. pneumoniae NTUH-K2044]"                                           . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      11 no DBJ  BAI28199   . "major cold shock protein CspA [Escherichia coli O26:H11 str. 11368]"                                               . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      12 no EMBL CAD07979   . "cold shock protein [Salmonella enterica subsp. enterica serovar Typhi str. CT18]"                                  . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      13 no EMBL CAP78016   . "Cold shock protein cspA [Escherichia coli LF82]"                                                                   . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      14 no EMBL CAQ33874   . "CspA transcriptional activator [Escherichia coli BL21(DE3)]"                                                       . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      15 no EMBL CAQ91030   . "major cold shock protein [Escherichia fergusonii ATCC 35469]"                                                      . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      16 no EMBL CAR00519   . "major cold shock protein [Escherichia coli IAI1]"                                                                  . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      17 no GB   AAA23617   . "cold shock protein (cspA) [Escherichia coli]"                                                                      . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      18 no GB   AAB18533   . "cold regulated [Escherichia coli str. K-12 substr. MG1655]"                                                        . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      19 no GB   AAB66357   . "cold shock protein [Salmonella enterica subsp. enterica serovar Typhimurium]"                                      . . . . . 100.00  70  98.57  98.57 7.04e-41 . . . . 4108 1 
+      20 no GB   AAB69447   . "cold shock protein [Salmonella enterica subsp. enterica serovar Enteritidis]"                                      . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      21 no GB   AAC06036   . "cold shock protein A [Salmonella enterica subsp. enterica serovar Typhimurium]"                                    . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      22 no PIR  AG0981     . "cold shock protein [imported] - Salmonella enterica subsp. enterica serovar Typhi (strain CT18)"                   . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      23 no REF  NP_312468  . "major cold shock protein [Escherichia coli O157:H7 str. Sakai]"                                                    . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      24 no REF  NP_418012  . "RNA chaperone and antiterminator, cold-inducible [Escherichia coli str. K-12 substr. MG1655]"                      . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      25 no REF  NP_458276  . "cold shock protein [Salmonella enterica subsp. enterica serovar Typhi str. CT18]"                                  . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      26 no REF  NP_462550  . "cold shock protein CspA [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2]"                        . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      27 no REF  NP_709333  . "RNA chaperone/anti-terminator [Shigella flexneri 2a str. 301]"                                                     . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      28 no SP   P0A9X9     . "RecName: Full=Cold shock protein CspA; Short=CSP-A; AltName: Full=7.4 kDa cold shock protein; AltName: Full=CS7.4" . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      29 no SP   P0A9Y0     . "RecName: Full=Cold shock protein CspA; Short=CSP-A; AltName: Full=7.4 kDa cold shock protein; AltName: Full=CS7.4" . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      30 no SP   P0A9Y1     . "RecName: Full=Cold shock protein CspA; Short=CSP-A; AltName: Full=7.4 kDa cold shock protein; AltName: Full=CS7.4" . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      31 no SP   P0A9Y2     . "RecName: Full=Cold shock protein CspA; Short=CSP-A; AltName: Full=7.4 kDa cold shock protein; AltName: Full=CS7.4" . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+      32 no SP   P0A9Y3     . "RecName: Full=Cold shock protein CspA; Short=CSP-A; AltName: Full=7.4 kDa cold shock protein; AltName: Full=CS7.4" . . . . . 100.00  70 100.00 100.00 1.71e-41 . . . . 4108 1 
+
+   stop_
+
+   loop_
+      _Entity_common_name.Name
+      _Entity_common_name.Type
+      _Entity_common_name.Entry_ID
+      _Entity_common_name.Entity_ID
+
+      'Cold shock protein A' common       4108 1 
+       CspA                  abbreviation 4108 1 
+       CspA                  variant      4108 1 
+
+   stop_
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+       1 . MET . 4108 1 
+       2 . SER . 4108 1 
+       3 . GLY . 4108 1 
+       4 . LYS . 4108 1 
+       5 . MET . 4108 1 
+       6 . THR . 4108 1 
+       7 . GLY . 4108 1 
+       8 . ILE . 4108 1 
+       9 . VAL . 4108 1 
+      10 . LYS . 4108 1 
+      11 . TRP . 4108 1 
+      12 . PHE . 4108 1 
+      13 . ASN . 4108 1 
+      14 . ALA . 4108 1 
+      15 . ASP . 4108 1 
+      16 . LYS . 4108 1 
+      17 . GLY . 4108 1 
+      18 . PHE . 4108 1 
+      19 . GLY . 4108 1 
+      20 . PHE . 4108 1 
+      21 . ILE . 4108 1 
+      22 . THR . 4108 1 
+      23 . PRO . 4108 1 
+      24 . ASP . 4108 1 
+      25 . ASP . 4108 1 
+      26 . GLY . 4108 1 
+      27 . SER . 4108 1 
+      28 . LYS . 4108 1 
+      29 . ASP . 4108 1 
+      30 . VAL . 4108 1 
+      31 . PHE . 4108 1 
+      32 . VAL . 4108 1 
+      33 . HIS . 4108 1 
+      34 . PHE . 4108 1 
+      35 . SER . 4108 1 
+      36 . ALA . 4108 1 
+      37 . ILE . 4108 1 
+      38 . GLN . 4108 1 
+      39 . ASN . 4108 1 
+      40 . ASP . 4108 1 
+      41 . GLY . 4108 1 
+      42 . TYR . 4108 1 
+      43 . LYS . 4108 1 
+      44 . SER . 4108 1 
+      45 . LEU . 4108 1 
+      46 . ASP . 4108 1 
+      47 . GLU . 4108 1 
+      48 . GLY . 4108 1 
+      49 . GLN . 4108 1 
+      50 . LYS . 4108 1 
+      51 . VAL . 4108 1 
+      52 . SER . 4108 1 
+      53 . PHE . 4108 1 
+      54 . THR . 4108 1 
+      55 . ILE . 4108 1 
+      56 . GLU . 4108 1 
+      57 . SER . 4108 1 
+      58 . GLY . 4108 1 
+      59 . ALA . 4108 1 
+      60 . LYS . 4108 1 
+      61 . GLY . 4108 1 
+      62 . PRO . 4108 1 
+      63 . ALA . 4108 1 
+      64 . ALA . 4108 1 
+      65 . GLY . 4108 1 
+      66 . ASN . 4108 1 
+      67 . VAL . 4108 1 
+      68 . THR . 4108 1 
+      69 . SER . 4108 1 
+      70 . LEU . 4108 1 
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      . MET  1  1 4108 1 
+      . SER  2  2 4108 1 
+      . GLY  3  3 4108 1 
+      . LYS  4  4 4108 1 
+      . MET  5  5 4108 1 
+      . THR  6  6 4108 1 
+      . GLY  7  7 4108 1 
+      . ILE  8  8 4108 1 
+      . VAL  9  9 4108 1 
+      . LYS 10 10 4108 1 
+      . TRP 11 11 4108 1 
+      . PHE 12 12 4108 1 
+      . ASN 13 13 4108 1 
+      . ALA 14 14 4108 1 
+      . ASP 15 15 4108 1 
+      . LYS 16 16 4108 1 
+      . GLY 17 17 4108 1 
+      . PHE 18 18 4108 1 
+      . GLY 19 19 4108 1 
+      . PHE 20 20 4108 1 
+      . ILE 21 21 4108 1 
+      . THR 22 22 4108 1 
+      . PRO 23 23 4108 1 
+      . ASP 24 24 4108 1 
+      . ASP 25 25 4108 1 
+      . GLY 26 26 4108 1 
+      . SER 27 27 4108 1 
+      . LYS 28 28 4108 1 
+      . ASP 29 29 4108 1 
+      . VAL 30 30 4108 1 
+      . PHE 31 31 4108 1 
+      . VAL 32 32 4108 1 
+      . HIS 33 33 4108 1 
+      . PHE 34 34 4108 1 
+      . SER 35 35 4108 1 
+      . ALA 36 36 4108 1 
+      . ILE 37 37 4108 1 
+      . GLN 38 38 4108 1 
+      . ASN 39 39 4108 1 
+      . ASP 40 40 4108 1 
+      . GLY 41 41 4108 1 
+      . TYR 42 42 4108 1 
+      . LYS 43 43 4108 1 
+      . SER 44 44 4108 1 
+      . LEU 45 45 4108 1 
+      . ASP 46 46 4108 1 
+      . GLU 47 47 4108 1 
+      . GLY 48 48 4108 1 
+      . GLN 49 49 4108 1 
+      . LYS 50 50 4108 1 
+      . VAL 51 51 4108 1 
+      . SER 52 52 4108 1 
+      . PHE 53 53 4108 1 
+      . THR 54 54 4108 1 
+      . ILE 55 55 4108 1 
+      . GLU 56 56 4108 1 
+      . SER 57 57 4108 1 
+      . GLY 58 58 4108 1 
+      . ALA 59 59 4108 1 
+      . LYS 60 60 4108 1 
+      . GLY 61 61 4108 1 
+      . PRO 62 62 4108 1 
+      . ALA 63 63 4108 1 
+      . ALA 64 64 4108 1 
+      . GLY 65 65 4108 1 
+      . ASN 66 66 4108 1 
+      . VAL 67 67 4108 1 
+      . THR 68 68 4108 1 
+      . SER 69 69 4108 1 
+      . LEU 70 70 4108 1 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Entity_natural_src_list.Sf_category    natural_source
+   _Entity_natural_src_list.Sf_framecode   natural_source
+   _Entity_natural_src_list.Entry_ID       4108
+   _Entity_natural_src_list.ID             1
+
+   loop_
+      _Entity_natural_src.ID
+      _Entity_natural_src.Entity_ID
+      _Entity_natural_src.Entity_label
+      _Entity_natural_src.Entity_chimera_segment_ID
+      _Entity_natural_src.NCBI_taxonomy_ID
+      _Entity_natural_src.Type
+      _Entity_natural_src.Common
+      _Entity_natural_src.Organism_name_scientific
+      _Entity_natural_src.Organism_name_common
+      _Entity_natural_src.Organism_acronym
+      _Entity_natural_src.ICTVdb_decimal_code
+      _Entity_natural_src.Superkingdom
+      _Entity_natural_src.Kingdom
+      _Entity_natural_src.Genus
+      _Entity_natural_src.Species
+      _Entity_natural_src.Strain
+      _Entity_natural_src.Variant
+      _Entity_natural_src.Subvariant
+      _Entity_natural_src.Organ
+      _Entity_natural_src.Tissue
+      _Entity_natural_src.Tissue_fraction
+      _Entity_natural_src.Cell_line
+      _Entity_natural_src.Cell_type
+      _Entity_natural_src.ATCC_number
+      _Entity_natural_src.Organelle
+      _Entity_natural_src.Cellular_location
+      _Entity_natural_src.Fragment
+      _Entity_natural_src.Fraction
+      _Entity_natural_src.Secretion
+      _Entity_natural_src.Plasmid
+      _Entity_natural_src.Plasmid_details
+      _Entity_natural_src.Gene_mnemonic
+      _Entity_natural_src.Dev_stage
+      _Entity_natural_src.Details
+      _Entity_natural_src.Citation_ID
+      _Entity_natural_src.Citation_label
+      _Entity_natural_src.Entry_ID
+      _Entity_natural_src.Entity_natural_src_list_ID
+
+      1 1 $CspA . 562 . . 'Escherichia coli' 'E. coli' . . Eubacteria . Escherichia coli . . . . . . . . . . . . . . . . . . . . . 4108 1 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Entity_experimental_src_list.Sf_category    experimental_source
+   _Entity_experimental_src_list.Sf_framecode   experimental_source
+   _Entity_experimental_src_list.Entry_ID       4108
+   _Entity_experimental_src_list.ID             1
+
+   loop_
+      _Entity_experimental_src.ID
+      _Entity_experimental_src.Entity_ID
+      _Entity_experimental_src.Entity_label
+      _Entity_experimental_src.Entity_chimera_segment_ID
+      _Entity_experimental_src.Production_method
+      _Entity_experimental_src.Host_org_scientific_name
+      _Entity_experimental_src.Host_org_name_common
+      _Entity_experimental_src.Host_org_details
+      _Entity_experimental_src.Host_org_NCBI_taxonomy_ID
+      _Entity_experimental_src.Host_org_genus
+      _Entity_experimental_src.Host_org_species
+      _Entity_experimental_src.Host_org_strain
+      _Entity_experimental_src.Host_org_variant
+      _Entity_experimental_src.Host_org_subvariant
+      _Entity_experimental_src.Host_org_organ
+      _Entity_experimental_src.Host_org_tissue
+      _Entity_experimental_src.Host_org_tissue_fraction
+      _Entity_experimental_src.Host_org_cell_line
+      _Entity_experimental_src.Host_org_cell_type
+      _Entity_experimental_src.Host_org_cellular_location
+      _Entity_experimental_src.Host_org_organelle
+      _Entity_experimental_src.Host_org_gene
+      _Entity_experimental_src.Host_org_culture_collection
+      _Entity_experimental_src.Host_org_ATCC_number
+      _Entity_experimental_src.Vector_type
+      _Entity_experimental_src.PDBview_host_org_vector_name
+      _Entity_experimental_src.PDBview_plasmid_name
+      _Entity_experimental_src.Vector_name
+      _Entity_experimental_src.Vector_details
+      _Entity_experimental_src.Vendor_name
+      _Entity_experimental_src.Host_org_dev_stage
+      _Entity_experimental_src.Details
+      _Entity_experimental_src.Citation_ID
+      _Entity_experimental_src.Citation_label
+      _Entity_experimental_src.Entry_ID
+      _Entity_experimental_src.Entity_experimental_src_list_ID
+
+      1 1 $CspA . 'recombinant technology' 'Escherichia coli' 'E. coli' . . Escherichia coli BL21(DE3) . . . . . . . . . . . . plasmid . . pET11-cspA . . . 
+;
+synthetic (Clone is a gift from M. Inouye, Rutgers University:
+Reference - S. Chatterjee, W. Jiang, S.D. Emerson, M. Inouye, "The backbone 
+structure of the major cold-shock protein CS7.4 of Escherichia coli in 
+solution includes extensive b-sheet structure", 
+J. Biochem., Vol 114, pp 663-669, (1993).)
+; . . 4108 1 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_one
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_one
+   _Sample.Entry_ID                         4108
+   _Sample.ID                               1
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          .
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   .
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 'Cold shock protein A' [U-15N;U-13C] . . 1 $CspA . . 2 . . mM . . . . 4108 1 
+      2  Urea                  .             . .  .  .    . . 6 . . M  . . . . 4108 1 
+
+   stop_
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_sample_conditions_one
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   sample_conditions_one
+   _Sample_condition_list.Entry_ID       4108
+   _Sample_condition_list.ID             1
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      pH            2.7 0.2 n/a 4108 1 
+      temperature 293   1   K   4108 1 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer_one
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     NMR_spectrometer_one
+   _NMR_spectrometer.Entry_ID         4108
+   _NMR_spectrometer.ID               1
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     Varian
+   _NMR_spectrometer.Model            Unity+600
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   600
+
+save_
+
+
+save_spectrometer_list
+   _NMR_spectrometer_list.Sf_category    NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_framecode   spectrometer_list
+   _NMR_spectrometer_list.Entry_ID       4108
+   _NMR_spectrometer_list.ID             1
+
+   loop_
+      _NMR_spectrometer_view.ID
+      _NMR_spectrometer_view.Name
+      _NMR_spectrometer_view.Manufacturer
+      _NMR_spectrometer_view.Model
+      _NMR_spectrometer_view.Serial_number
+      _NMR_spectrometer_view.Field_strength
+      _NMR_spectrometer_view.Details
+      _NMR_spectrometer_view.Citation_ID
+      _NMR_spectrometer_view.Citation_label
+      _NMR_spectrometer_view.Entry_ID
+      _NMR_spectrometer_view.NMR_spectrometer_list_ID
+
+      1 NMR_spectrometer_one Varian Unity+600 . 600 . . . 4108 1 
+
+   stop_
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_experiment_list
+   _Experiment_list.Sf_category    experiment_list
+   _Experiment_list.Sf_framecode   experiment_list
+   _Experiment_list.Entry_ID       4108
+   _Experiment_list.ID             1
+   _Experiment_list.Details        .
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference_one
+   _Chem_shift_reference.Sf_category    chem_shift_reference
+   _Chem_shift_reference.Sf_framecode   chemical_shift_reference_one
+   _Chem_shift_reference.Entry_ID       4108
+   _Chem_shift_reference.ID             1
+   _Chem_shift_reference.Details        .
+
+   loop_
+      _Chem_shift_ref.Atom_type
+      _Chem_shift_ref.Atom_isotope_number
+      _Chem_shift_ref.Mol_common_name
+      _Chem_shift_ref.Atom_group
+      _Chem_shift_ref.Concentration_val
+      _Chem_shift_ref.Concentration_units
+      _Chem_shift_ref.Solvent
+      _Chem_shift_ref.Rank
+      _Chem_shift_ref.Chem_shift_units
+      _Chem_shift_ref.Chem_shift_val
+      _Chem_shift_ref.Ref_method
+      _Chem_shift_ref.Ref_type
+      _Chem_shift_ref.Indirect_shift_ratio
+      _Chem_shift_ref.External_ref_loc
+      _Chem_shift_ref.External_ref_sample_geometry
+      _Chem_shift_ref.External_ref_axis
+      _Chem_shift_ref.Indirect_shift_ratio_cit_ID
+      _Chem_shift_ref.Indirect_shift_ratio_cit_label
+      _Chem_shift_ref.Ref_correction_type
+      _Chem_shift_ref.Correction_val
+      _Chem_shift_ref.Correction_val_cit_ID
+      _Chem_shift_ref.Correction_val_cit_label
+      _Chem_shift_ref.Entry_ID
+      _Chem_shift_ref.Chem_shift_reference_ID
+
+      C 13 DSS methyl . . . . ppm 0.00 external indirect 0.251449530 . . . 2 $citation_one . . . . 4108 1 
+      H  1 DSS methyl . . . . ppm 0.00 internal direct    .          . . .  .  .            . . . . 4108 1 
+      N 15 DSS methyl . . . . ppm 0.00 external indirect 0.101329118 . . . 2 $citation_one . . . . 4108 1 
+
+   stop_
+
+save_
+
+
+     ###################################
+     #  Assigned chemical shift lists  #
+     ###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+save_chemical_shift_assignment_one
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  chemical_shift_assignment_one
+   _Assigned_chem_shift_list.Entry_ID                      4108
+   _Assigned_chem_shift_list.ID                            1
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label  $sample_conditions_one
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label   $chemical_shift_reference_one
+   _Assigned_chem_shift_list.Chem_shift_1H_err             .
+   _Assigned_chem_shift_list.Chem_shift_13C_err            .
+   _Assigned_chem_shift_list.Chem_shift_15N_err            .
+   _Assigned_chem_shift_list.Chem_shift_31P_err            .
+   _Assigned_chem_shift_list.Chem_shift_2H_err             .
+   _Assigned_chem_shift_list.Chem_shift_19F_err            .
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                       .
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+      . . 1 $sample_one . 4108 1 
+
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+        1 . 1 1  2  2 SER CA C 13  57.2  0.4  . 1 . . . . . . . . 4108 1 
+        2 . 1 1  2  2 SER CB C 13  62.8  0.4  . 1 . . . . . . . . 4108 1 
+        3 . 1 1  3  3 GLY H  H  1   8.59 0.01 . 1 . . . . . . . . 4108 1 
+        4 . 1 1  3  3 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+        5 . 1 1  3  3 GLY N  N 15 109.6  0.1  . 1 . . . . . . . . 4108 1 
+        6 . 1 1  4  4 LYS H  H  1   8.24 0.01 . 1 . . . . . . . . 4108 1 
+        7 . 1 1  4  4 LYS CA C 13  56.3  0.4  . 1 . . . . . . . . 4108 1 
+        8 . 1 1  4  4 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+        9 . 1 1  4  4 LYS N  N 15 121.3  0.1  . 1 . . . . . . . . 4108 1 
+       10 . 1 1  5  5 MET H  H  1   8.44 0.01 . 1 . . . . . . . . 4108 1 
+       11 . 1 1  5  5 MET CA C 13  55.5  0.4  . 1 . . . . . . . . 4108 1 
+       12 . 1 1  5  5 MET CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 1 
+       13 . 1 1  5  5 MET N  N 15 122.2  0.1  . 1 . . . . . . . . 4108 1 
+       14 . 1 1  6  6 THR H  H  1   8.07 0.01 . 1 . . . . . . . . 4108 1 
+       15 . 1 1  6  6 THR CA C 13  61.5  0.4  . 1 . . . . . . . . 4108 1 
+       16 . 1 1  6  6 THR CB C 13  69.7  0.4  . 1 . . . . . . . . 4108 1 
+       17 . 1 1  6  6 THR N  N 15 115.4  0.1  . 1 . . . . . . . . 4108 1 
+       18 . 1 1  7  7 GLY H  H  1   8.26 0.01 . 1 . . . . . . . . 4108 1 
+       19 . 1 1  7  7 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+       20 . 1 1  7  7 GLY N  N 15 110.9  0.1  . 1 . . . . . . . . 4108 1 
+       21 . 1 1  8  8 ILE H  H  1   7.89 0.01 . 1 . . . . . . . . 4108 1 
+       22 . 1 1  8  8 ILE CA C 13  60.6  0.4  . 1 . . . . . . . . 4108 1 
+       23 . 1 1  8  8 ILE CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+       24 . 1 1  8  8 ILE N  N 15 120.2  0.1  . 1 . . . . . . . . 4108 1 
+       25 . 1 1  9  9 VAL H  H  1   8.09 0.01 . 1 . . . . . . . . 4108 1 
+       26 . 1 1  9  9 VAL CA C 13  61.9  0.4  . 1 . . . . . . . . 4108 1 
+       27 . 1 1  9  9 VAL CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 1 
+       28 . 1 1  9  9 VAL N  N 15 125.3  0.1  . 1 . . . . . . . . 4108 1 
+       29 . 1 1 10 10 LYS H  H  1   8.16 0.01 . 1 . . . . . . . . 4108 1 
+       30 . 1 1 10 10 LYS CA C 13  55.9  0.4  . 1 . . . . . . . . 4108 1 
+       31 . 1 1 10 10 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+       32 . 1 1 10 10 LYS N  N 15 125.6  0.1  . 1 . . . . . . . . 4108 1 
+       33 . 1 1 11 11 TRP H  H  1   7.95 0.01 . 1 . . . . . . . . 4108 1 
+       34 . 1 1 11 11 TRP CA C 13  56.8  0.4  . 1 . . . . . . . . 4108 1 
+       35 . 1 1 11 11 TRP CB C 13  29.7  0.4  . 1 . . . . . . . . 4108 1 
+       36 . 1 1 11 11 TRP N  N 15 122.3  0.1  . 1 . . . . . . . . 4108 1 
+       37 . 1 1 12 12 PHE H  H  1   7.84 0.01 . 1 . . . . . . . . 4108 1 
+       38 . 1 1 12 12 PHE N  N 15 122.1  0.1  . 1 . . . . . . . . 4108 1 
+       39 . 1 1 13 13 ASN H  H  1   8.07 0.01 . 1 . . . . . . . . 4108 1 
+       40 . 1 1 13 13 ASN CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+       41 . 1 1 13 13 ASN N  N 15 121.00 0.1  . 1 . . . . . . . . 4108 1 
+       42 . 1 1 14 14 ALA H  H  1   8.04 0.01 . 1 . . . . . . . . 4108 1 
+       43 . 1 1 14 14 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 1 
+       44 . 1 1 14 14 ALA CB C 13  18.9  0.4  . 1 . . . . . . . . 4108 1 
+       45 . 1 1 14 14 ALA N  N 15 124.7  0.1  . 1 . . . . . . . . 4108 1 
+       46 . 1 1 15 15 ASP H  H  1   8.19 0.01 . 1 . . . . . . . . 4108 1 
+       47 . 1 1 15 15 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+       48 . 1 1 15 15 ASP CB C 13  37.9  0.4  . 1 . . . . . . . . 4108 1 
+       49 . 1 1 15 15 ASP N  N 15 117.3  0.1  . 1 . . . . . . . . 4108 1 
+       50 . 1 1 16 16 LYS H  H  1   7.97 0.01 . 1 . . . . . . . . 4108 1 
+       51 . 1 1 16 16 LYS CA C 13  56.3  0.4  . 1 . . . . . . . . 4108 1 
+       52 . 1 1 16 16 LYS CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 1 
+       53 . 1 1 16 16 LYS N  N 15 121.1  0.1  . 1 . . . . . . . . 4108 1 
+       54 . 1 1 17 17 GLY H  H  1   8.07 0.01 . 1 . . . . . . . . 4108 1 
+       55 . 1 1 17 17 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+       56 . 1 1 17 17 GLY N  N 15 109.00 0.1  . 1 . . . . . . . . 4108 1 
+       57 . 1 1 18 18 PHE H  H  1   7.97 0.01 . 1 . . . . . . . . 4108 1 
+       58 . 1 1 18 18 PHE CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+       59 . 1 1 18 18 PHE CB C 13  39.6  0.4  . 1 . . . . . . . . 4108 1 
+       60 . 1 1 18 18 PHE N  N 15 119.6  0.1  . 1 . . . . . . . . 4108 1 
+       61 . 1 1 19 19 GLY H  H  1   8.17 0.01 . 1 . . . . . . . . 4108 1 
+       62 . 1 1 19 19 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+       63 . 1 1 19 19 GLY N  N 15 110.1  0.1  . 1 . . . . . . . . 4108 1 
+       64 . 1 1 20 20 PHE H  H  1   7.86 0.01 . 1 . . . . . . . . 4108 1 
+       65 . 1 1 20 20 PHE CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+       66 . 1 1 20 20 PHE CB C 13  39.6  0.4  . 1 . . . . . . . . 4108 1 
+       67 . 1 1 20 20 PHE N  N 15 120.00 0.1  . 1 . . . . . . . . 4108 1 
+       68 . 1 1 21 21 ILE H  H  1   8.02 0.01 . 1 . . . . . . . . 4108 1 
+       69 . 1 1 21 21 ILE CB C 13  40.00 0.4  . 1 . . . . . . . . 4108 1 
+       70 . 1 1 21 21 ILE N  N 15 123.4  0.1  . 1 . . . . . . . . 4108 1 
+       71 . 1 1 22 22 THR H  H  1   8.11 0.01 . 1 . . . . . . . . 4108 1 
+       72 . 1 1 22 22 THR CB C 13  69.7  0.4  . 1 . . . . . . . . 4108 1 
+       73 . 1 1 22 22 THR N  N 15 121.2  0.1  . 1 . . . . . . . . 4108 1 
+       74 . 1 1 23 23 PRO CA C 13  63.2  0.4  . 1 . . . . . . . . 4108 1 
+       75 . 1 1 23 23 PRO CB C 13  32.3  0.4  . 1 . . . . . . . . 4108 1 
+       76 . 1 1 24 24 ASP H  H  1   8.4  0.01 . 1 . . . . . . . . 4108 1 
+       77 . 1 1 24 24 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+       78 . 1 1 24 24 ASP CB C 13  37.9  0.4  . 1 . . . . . . . . 4108 1 
+       79 . 1 1 24 24 ASP N  N 15 118.9  0.1  . 1 . . . . . . . . 4108 1 
+       80 . 1 1 25 25 ASP H  H  1   8.36 0.01 . 1 . . . . . . . . 4108 1 
+       81 . 1 1 25 25 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+       82 . 1 1 25 25 ASP CB C 13  38.3  0.4  . 1 . . . . . . . . 4108 1 
+       83 . 1 1 25 25 ASP N  N 15 119.5  0.1  . 1 . . . . . . . . 4108 1 
+       84 . 1 1 26 26 GLY H  H  1   8.19 0.01 . 1 . . . . . . . . 4108 1 
+       85 . 1 1 26 26 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+       86 . 1 1 26 26 GLY N  N 15 109.00 0.1  . 1 . . . . . . . . 4108 1 
+       87 . 1 1 27 27 SER H  H  1   8.02 0.01 . 1 . . . . . . . . 4108 1 
+       88 . 1 1 27 27 SER CA C 13  58.5  0.4  . 1 . . . . . . . . 4108 1 
+       89 . 1 1 27 27 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+       90 . 1 1 27 27 SER N  N 15 115.4  0.1  . 1 . . . . . . . . 4108 1 
+       91 . 1 1 28 28 LYS H  H  1   8.22 0.01 . 1 . . . . . . . . 4108 1 
+       92 . 1 1 28 28 LYS CA C 13  58.5  0.4  . 1 . . . . . . . . 4108 1 
+       93 . 1 1 28 28 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+       94 . 1 1 28 28 LYS N  N 15 122.7  0.1  . 1 . . . . . . . . 4108 1 
+       95 . 1 1 29 29 ASP H  H  1   8.28 0.01 . 1 . . . . . . . . 4108 1 
+       96 . 1 1 29 29 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+       97 . 1 1 29 29 ASP CB C 13  37.9  0.4  . 1 . . . . . . . . 4108 1 
+       98 . 1 1 29 29 ASP N  N 15 119.7  0.1  . 1 . . . . . . . . 4108 1 
+       99 . 1 1 30 30 VAL H  H  1   7.8  0.01 . 1 . . . . . . . . 4108 1 
+      100 . 1 1 30 30 VAL CA C 13  61.9  0.4  . 1 . . . . . . . . 4108 1 
+      101 . 1 1 30 30 VAL CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 1 
+      102 . 1 1 30 30 VAL N  N 15 120.00 0.1  . 1 . . . . . . . . 4108 1 
+      103 . 1 1 31 31 PHE H  H  1   8.11 0.01 . 1 . . . . . . . . 4108 1 
+      104 . 1 1 31 31 PHE CA C 13  57.2  0.4  . 1 . . . . . . . . 4108 1 
+      105 . 1 1 31 31 PHE CB C 13  39.6  0.4  . 1 . . . . . . . . 4108 1 
+      106 . 1 1 31 31 PHE N  N 15 123.7  0.1  . 1 . . . . . . . . 4108 1 
+      107 . 1 1 32 32 VAL H  H  1   7.86 0.01 . 1 . . . . . . . . 4108 1 
+      108 . 1 1 32 32 VAL CA C 13  61.9  0.4  . 1 . . . . . . . . 4108 1 
+      109 . 1 1 32 32 VAL CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+      110 . 1 1 32 32 VAL N  N 15 122.00 0.1  . 1 . . . . . . . . 4108 1 
+      111 . 1 1 33 33 HIS H  H  1   8.35 0.01 . 1 . . . . . . . . 4108 1 
+      112 . 1 1 33 33 HIS CA C 13  54.6  0.4  . 1 . . . . . . . . 4108 1 
+      113 . 1 1 33 33 HIS CB C 13  29.3  0.4  . 1 . . . . . . . . 4108 1 
+      114 . 1 1 33 33 HIS N  N 15 122.2  0.1  . 1 . . . . . . . . 4108 1 
+      115 . 1 1 34 34 PHE H  H  1   8.27 0.01 . 1 . . . . . . . . 4108 1 
+      116 . 1 1 34 34 PHE CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+      117 . 1 1 34 34 PHE CB C 13  40.00 0.4  . 1 . . . . . . . . 4108 1 
+      118 . 1 1 34 34 PHE N  N 15 123.00 0.1  . 1 . . . . . . . . 4108 1 
+      119 . 1 1 35 35 SER H  H  1   8.2  0.01 . 1 . . . . . . . . 4108 1 
+      120 . 1 1 35 35 SER CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+      121 . 1 1 35 35 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+      122 . 1 1 35 35 SER N  N 15 118.2  0.1  . 1 . . . . . . . . 4108 1 
+      123 . 1 1 36 36 ALA H  H  1   8.2  0.01 . 1 . . . . . . . . 4108 1 
+      124 . 1 1 36 36 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 1 
+      125 . 1 1 36 36 ALA CB C 13  19.4  0.4  . 1 . . . . . . . . 4108 1 
+      126 . 1 1 36 36 ALA N  N 15 126.4  0.1  . 1 . . . . . . . . 4108 1 
+      127 . 1 1 37 37 ILE H  H  1   7.92 0.01 . 1 . . . . . . . . 4108 1 
+      128 . 1 1 37 37 ILE CA C 13  61.1  0.4  . 1 . . . . . . . . 4108 1 
+      129 . 1 1 37 37 ILE CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+      130 . 1 1 37 37 ILE N  N 15 119.7  0.1  . 1 . . . . . . . . 4108 1 
+      131 . 1 1 38 38 GLN H  H  1   8.26 0.01 . 1 . . . . . . . . 4108 1 
+      132 . 1 1 38 38 GLN CA C 13  55.5  0.4  . 1 . . . . . . . . 4108 1 
+      133 . 1 1 38 38 GLN CB C 13  29.3  0.4  . 1 . . . . . . . . 4108 1 
+      134 . 1 1 38 38 GLN N  N 15 124.3  0.1  . 1 . . . . . . . . 4108 1 
+      135 . 1 1 39 39 ASN H  H  1   8.36 0.01 . 1 . . . . . . . . 4108 1 
+      136 . 1 1 39 39 ASN CA C 13  53.3  0.4  . 1 . . . . . . . . 4108 1 
+      137 . 1 1 39 39 ASN CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+      138 . 1 1 39 39 ASN N  N 15 120.3  0.1  . 1 . . . . . . . . 4108 1 
+      139 . 1 1 40 40 ASP H  H  1   8.27 0.01 . 1 . . . . . . . . 4108 1 
+      140 . 1 1 40 40 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+      141 . 1 1 40 40 ASP CB C 13  38.3  0.4  . 1 . . . . . . . . 4108 1 
+      142 . 1 1 40 40 ASP N  N 15 119.7  0.1  . 1 . . . . . . . . 4108 1 
+      143 . 1 1 41 41 GLY H  H  1   8.23 0.01 . 1 . . . . . . . . 4108 1 
+      144 . 1 1 41 41 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+      145 . 1 1 41 41 GLY N  N 15 108.9  0.1  . 1 . . . . . . . . 4108 1 
+      146 . 1 1 42 42 TYR H  H  1   7.85 0.01 . 1 . . . . . . . . 4108 1 
+      147 . 1 1 42 42 TYR CA C 13  58.1  0.4  . 1 . . . . . . . . 4108 1 
+      148 . 1 1 42 42 TYR CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+      149 . 1 1 42 42 TYR N  N 15 120.00 0.1  . 1 . . . . . . . . 4108 1 
+      150 . 1 1 43 43 LYS H  H  1   8.02 0.01 . 1 . . . . . . . . 4108 1 
+      151 . 1 1 43 43 LYS CA C 13  55.9  0.4  . 1 . . . . . . . . 4108 1 
+      152 . 1 1 43 43 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+      153 . 1 1 43 43 LYS N  N 15 123.4  0.1  . 1 . . . . . . . . 4108 1 
+      154 . 1 1 44 44 SER H  H  1   8.09 0.01 . 1 . . . . . . . . 4108 1 
+      155 . 1 1 44 44 SER CA C 13  58.1  0.4  . 1 . . . . . . . . 4108 1 
+      156 . 1 1 44 44 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+      157 . 1 1 44 44 SER N  N 15 116.9  0.1  . 1 . . . . . . . . 4108 1 
+      158 . 1 1 45 45 LEU H  H  1   8.17 0.01 . 1 . . . . . . . . 4108 1 
+      159 . 1 1 45 45 LEU CA C 13  55.00 0.4  . 1 . . . . . . . . 4108 1 
+      160 . 1 1 45 45 LEU CB C 13  42.2  0.4  . 1 . . . . . . . . 4108 1 
+      161 . 1 1 45 45 LEU N  N 15 124.00 0.1  . 1 . . . . . . . . 4108 1 
+      162 . 1 1 46 46 ASP H  H  1   8.34 0.01 . 1 . . . . . . . . 4108 1 
+      163 . 1 1 46 46 ASP CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+      164 . 1 1 46 46 ASP CB C 13  37.9  0.4  . 1 . . . . . . . . 4108 1 
+      165 . 1 1 46 46 ASP N  N 15 119.3  0.1  . 1 . . . . . . . . 4108 1 
+      166 . 1 1 47 47 GLU H  H  1   8.17 0.01 . 1 . . . . . . . . 4108 1 
+      167 . 1 1 47 47 GLU CA C 13  55.9  0.4  . 1 . . . . . . . . 4108 1 
+      168 . 1 1 47 47 GLU CB C 13  28.8  0.4  . 1 . . . . . . . . 4108 1 
+      169 . 1 1 47 47 GLU N  N 15 120.7  0.1  . 1 . . . . . . . . 4108 1 
+      170 . 1 1 48 48 GLY H  H  1   8.24 0.01 . 1 . . . . . . . . 4108 1 
+      171 . 1 1 48 48 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+      172 . 1 1 48 48 GLY N  N 15 109.3  0.1  . 1 . . . . . . . . 4108 1 
+      173 . 1 1 49 49 GLN H  H  1   8.06 0.01 . 1 . . . . . . . . 4108 1 
+      174 . 1 1 49 49 GLN CA C 13  55.5  0.4  . 1 . . . . . . . . 4108 1 
+      175 . 1 1 49 49 GLN CB C 13  29.7  0.4  . 1 . . . . . . . . 4108 1 
+      176 . 1 1 49 49 GLN N  N 15 119.8  0.1  . 1 . . . . . . . . 4108 1 
+      177 . 1 1 50 50 LYS H  H  1   8.3  0.01 . 1 . . . . . . . . 4108 1 
+      178 . 1 1 50 50 LYS CA C 13  56.3  0.4  . 1 . . . . . . . . 4108 1 
+      179 . 1 1 50 50 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+      180 . 1 1 50 50 LYS N  N 15 123.2  0.1  . 1 . . . . . . . . 4108 1 
+      181 . 1 1 51 51 VAL H  H  1   8.07 0.01 . 1 . . . . . . . . 4108 1 
+      182 . 1 1 51 51 VAL CA C 13  61.9  0.4  . 1 . . . . . . . . 4108 1 
+      183 . 1 1 51 51 VAL CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 1 
+      184 . 1 1 51 51 VAL N  N 15 121.6  0.1  . 1 . . . . . . . . 4108 1 
+      185 . 1 1 52 52 SER H  H  1   8.19 0.01 . 1 . . . . . . . . 4108 1 
+      186 . 1 1 52 52 SER CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+      187 . 1 1 52 52 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+      188 . 1 1 52 52 SER N  N 15 119.4  0.1  . 1 . . . . . . . . 4108 1 
+      189 . 1 1 53 53 PHE H  H  1   8.14 0.01 . 1 . . . . . . . . 4108 1 
+      190 . 1 1 53 53 PHE CA C 13  57.6  0.4  . 1 . . . . . . . . 4108 1 
+      191 . 1 1 53 53 PHE CB C 13  40.00 0.4  . 1 . . . . . . . . 4108 1 
+      192 . 1 1 53 53 PHE N  N 15 122.5  0.1  . 1 . . . . . . . . 4108 1 
+      193 . 1 1 54 54 THR H  H  1   8.06 0.01 . 1 . . . . . . . . 4108 1 
+      194 . 1 1 54 54 THR CA C 13  61.5  0.4  . 1 . . . . . . . . 4108 1 
+      195 . 1 1 54 54 THR CB C 13  69.7  0.4  . 1 . . . . . . . . 4108 1 
+      196 . 1 1 54 54 THR N  N 15 116.6  0.1  . 1 . . . . . . . . 4108 1 
+      197 . 1 1 55 55 ILE H  H  1   8.11 0.01 . 1 . . . . . . . . 4108 1 
+      198 . 1 1 55 55 ILE CA C 13  61.1  0.4  . 1 . . . . . . . . 4108 1 
+      199 . 1 1 55 55 ILE CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+      200 . 1 1 55 55 ILE N  N 15 123.6  0.1  . 1 . . . . . . . . 4108 1 
+      201 . 1 1 56 56 GLU H  H  1   8.34 0.01 . 1 . . . . . . . . 4108 1 
+      202 . 1 1 56 56 GLU CA C 13  55.5  0.4  . 1 . . . . . . . . 4108 1 
+      203 . 1 1 56 56 GLU CB C 13  28.8  0.4  . 1 . . . . . . . . 4108 1 
+      204 . 1 1 56 56 GLU N  N 15 124.6  0.1  . 1 . . . . . . . . 4108 1 
+      205 . 1 1 57 57 SER H  H  1   8.24 0.01 . 1 . . . . . . . . 4108 1 
+      206 . 1 1 57 57 SER CA C 13  58.5  0.4  . 1 . . . . . . . . 4108 1 
+      207 . 1 1 57 57 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+      208 . 1 1 57 57 SER N  N 15 117.3  0.1  . 1 . . . . . . . . 4108 1 
+      209 . 1 1 58 58 GLY H  H  1   8.28 0.01 . 1 . . . . . . . . 4108 1 
+      210 . 1 1 58 58 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+      211 . 1 1 58 58 GLY N  N 15 110.9  0.1  . 1 . . . . . . . . 4108 1 
+      212 . 1 1 59 59 ALA H  H  1   7.99 0.01 . 1 . . . . . . . . 4108 1 
+      213 . 1 1 59 59 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 1 
+      214 . 1 1 59 59 ALA CB C 13  19.4  0.4  . 1 . . . . . . . . 4108 1 
+      215 . 1 1 59 59 ALA N  N 15 123.7  0.1  . 1 . . . . . . . . 4108 1 
+      216 . 1 1 60 60 LYS H  H  1   8.22 0.01 . 1 . . . . . . . . 4108 1 
+      217 . 1 1 60 60 LYS CA C 13  55.9  0.4  . 1 . . . . . . . . 4108 1 
+      218 . 1 1 60 60 LYS CB C 13  33.5  0.4  . 1 . . . . . . . . 4108 1 
+      219 . 1 1 60 60 LYS N  N 15 120.5  0.1  . 1 . . . . . . . . 4108 1 
+      220 . 1 1 61 61 GLY H  H  1   8.08 0.01 . 1 . . . . . . . . 4108 1 
+      221 . 1 1 61 61 GLY CA C 13  44.3  0.4  . 1 . . . . . . . . 4108 1 
+      222 . 1 1 61 61 GLY N  N 15 109.8  0.1  . 1 . . . . . . . . 4108 1 
+      223 . 1 1 62 62 PRO CA C 13  62.8  0.4  . 1 . . . . . . . . 4108 1 
+      224 . 1 1 62 62 PRO CB C 13  32.3  0.4  . 1 . . . . . . . . 4108 1 
+      225 . 1 1 63 63 ALA H  H  1   8.28 0.01 . 1 . . . . . . . . 4108 1 
+      226 . 1 1 63 63 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 1 
+      227 . 1 1 63 63 ALA CB C 13  18.9  0.4  . 1 . . . . . . . . 4108 1 
+      228 . 1 1 63 63 ALA N  N 15 124.4  0.1  . 1 . . . . . . . . 4108 1 
+      229 . 1 1 64 64 ALA H  H  1   8.11 0.01 . 1 . . . . . . . . 4108 1 
+      230 . 1 1 64 64 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 1 
+      231 . 1 1 64 64 ALA CB C 13  19.4  0.4  . 1 . . . . . . . . 4108 1 
+      232 . 1 1 64 64 ALA N  N 15 123.3  0.1  . 1 . . . . . . . . 4108 1 
+      233 . 1 1 65 65 GLY H  H  1   8.14 0.01 . 1 . . . . . . . . 4108 1 
+      234 . 1 1 65 65 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 1 
+      235 . 1 1 65 65 GLY N  N 15 107.5  0.1  . 1 . . . . . . . . 4108 1 
+      236 . 1 1 66 66 ASN H  H  1   8.18 0.01 . 1 . . . . . . . . 4108 1 
+      237 . 1 1 66 66 ASN CA C 13  52.9  0.4  . 1 . . . . . . . . 4108 1 
+      238 . 1 1 66 66 ASN CB C 13  38.7  0.4  . 1 . . . . . . . . 4108 1 
+      239 . 1 1 66 66 ASN N  N 15 118.7  0.1  . 1 . . . . . . . . 4108 1 
+      240 . 1 1 67 67 VAL H  H  1   8.04 0.01 . 1 . . . . . . . . 4108 1 
+      241 . 1 1 67 67 VAL CA C 13  62.4  0.4  . 1 . . . . . . . . 4108 1 
+      242 . 1 1 67 67 VAL CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 1 
+      243 . 1 1 67 67 VAL N  N 15 120.1  0.1  . 1 . . . . . . . . 4108 1 
+      244 . 1 1 68 68 THR H  H  1   8.15 0.01 . 1 . . . . . . . . 4108 1 
+      245 . 1 1 68 68 THR CA C 13  61.5  0.4  . 1 . . . . . . . . 4108 1 
+      246 . 1 1 68 68 THR CB C 13  69.7  0.4  . 1 . . . . . . . . 4108 1 
+      247 . 1 1 68 68 THR N  N 15 117.6  0.1  . 1 . . . . . . . . 4108 1 
+      248 . 1 1 69 69 SER H  H  1   8.15 0.01 . 1 . . . . . . . . 4108 1 
+      249 . 1 1 69 69 SER CA C 13  58.1  0.4  . 1 . . . . . . . . 4108 1 
+      250 . 1 1 69 69 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 1 
+      251 . 1 1 69 69 SER N  N 15 118.3  0.1  . 1 . . . . . . . . 4108 1 
+      252 . 1 1 70 70 LEU H  H  1   8.17 0.01 . 1 . . . . . . . . 4108 1 
+      253 . 1 1 70 70 LEU CA C 13  54.2  0.4  . 1 . . . . . . . . 4108 1 
+      254 . 1 1 70 70 LEU CB C 13  42.4  0.4  . 1 . . . . . . . . 4108 1 
+      255 . 1 1 70 70 LEU N  N 15 124.7  0.1  . 1 . . . . . . . . 4108 1 
+
+   stop_
+
+save_
+
+
+save_chemical_shift_assignment_two
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  chemical_shift_assignment_two
+   _Assigned_chem_shift_list.Entry_ID                      4108
+   _Assigned_chem_shift_list.ID                            2
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label  $sample_conditions_one
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label   $chemical_shift_reference_one
+   _Assigned_chem_shift_list.Chem_shift_1H_err             .
+   _Assigned_chem_shift_list.Chem_shift_13C_err            .
+   _Assigned_chem_shift_list.Chem_shift_15N_err            .
+   _Assigned_chem_shift_list.Chem_shift_31P_err            .
+   _Assigned_chem_shift_list.Chem_shift_2H_err             .
+   _Assigned_chem_shift_list.Chem_shift_19F_err            .
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                      'Minor 10% form assigned to CIS PRO 62'
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+      . . 1 $sample_one . 4108 2 
+
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+       1 . 1 1 56 56 GLU CA C 13  55.00 0.4  . 1 . . . . . . . . 4108 2 
+       2 . 1 1 56 56 GLU CB C 13  32.7  0.4  . 1 . . . . . . . . 4108 2 
+       3 . 1 1 57 57 SER H  H  1   8.71 0.01 . 1 . . . . . . . . 4108 2 
+       4 . 1 1 57 57 SER CA C 13  58.1  0.4  . 1 . . . . . . . . 4108 2 
+       5 . 1 1 57 57 SER CB C 13  63.6  0.4  . 1 . . . . . . . . 4108 2 
+       6 . 1 1 57 57 SER N  N 15 119.2  0.1  . 1 . . . . . . . . 4108 2 
+       7 . 1 1 58 58 GLY H  H  1   8.38 0.01 . 1 . . . . . . . . 4108 2 
+       8 . 1 1 58 58 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 2 
+       9 . 1 1 58 58 GLY N  N 15 110.9  0.1  . 1 . . . . . . . . 4108 2 
+      10 . 1 1 60 60 LYS CA C 13  56.3  0.4  . 1 . . . . . . . . 4108 2 
+      11 . 1 1 60 60 LYS CB C 13  33.1  0.4  . 1 . . . . . . . . 4108 2 
+      12 . 1 1 61 61 GLY H  H  1   8.15 0.01 . 1 . . . . . . . . 4108 2 
+      13 . 1 1 61 61 GLY CA C 13  44.7  0.4  . 1 . . . . . . . . 4108 2 
+      14 . 1 1 61 61 GLY N  N 15 109.3  0.1  . 1 . . . . . . . . 4108 2 
+      15 . 1 1 62 62 PRO CA C 13  62.4  0.4  . 1 . . . . . . . . 4108 2 
+      16 . 1 1 62 62 PRO CB C 13  34.4  0.4  . 1 . . . . . . . . 4108 2 
+      17 . 1 1 63 63 ALA H  H  1   8.44 0.01 . 1 . . . . . . . . 4108 2 
+      18 . 1 1 63 63 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 2 
+      19 . 1 1 63 63 ALA CB C 13  19.4  0.4  . 1 . . . . . . . . 4108 2 
+      20 . 1 1 63 63 ALA N  N 15 125.00 0.1  . 1 . . . . . . . . 4108 2 
+      21 . 1 1 64 64 ALA H  H  1   8.26 0.01 . 1 . . . . . . . . 4108 2 
+      22 . 1 1 64 64 ALA CA C 13  52.5  0.4  . 1 . . . . . . . . 4108 2 
+      23 . 1 1 64 64 ALA CB C 13  19.4  0.4  . 1 . . . . . . . . 4108 2 
+      24 . 1 1 64 64 ALA N  N 15 123.6  0.1  . 1 . . . . . . . . 4108 2 
+      25 . 1 1 65 65 GLY H  H  1   8.18 0.01 . 1 . . . . . . . . 4108 2 
+      26 . 1 1 65 65 GLY CA C 13  45.2  0.4  . 1 . . . . . . . . 4108 2 
+      27 . 1 1 65 65 GLY N  N 15 107.6  0.1  . 1 . . . . . . . . 4108 2 
+
+   stop_
+
+save_
+
