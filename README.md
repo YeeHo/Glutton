@@ -3,7 +3,7 @@ Part 1 of 3. Use Glutton script to generate structure ensemble based on chemical
 
 Step1. Put database files (LEVEL*.dat), Glutton_R1.0.py and input.txt files in the same folder.
 
-Step2. create subfolders named "cs" and "PDBOUT" within this folder.
+Step2. If there are no subfolders named "cs" and "PDBOUT" within this folder, create them before run Glutton script.
 
 Step3. Put input chemical shift file (NMRSTAR 3.0 format) in the subfolder "cs"
 
