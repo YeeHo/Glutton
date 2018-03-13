@@ -1,4 +1,6 @@
 # Glutton
+Please take 5 minutes to read this brief readme file before running Glutton script.
+
 Part 1 of 4. Introduction of Glutton
 
         The Glutton database that we have developed is specifically designed to fill a large void
