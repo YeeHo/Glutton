@@ -6,7 +6,8 @@ Part 1 of 4. Introduction of Glutton
         The Glutton database that we have developed is specifically designed to fill a large void
         currently existing in the bioinformatics tools for the structural analysis of intrinsically
         disordered proteins (IDPs) based on experimental information, namely NMR. Our Glutton database 
-        contains a total of 5,270 proteins. Glutton database has a hierarchical system of three tiers
+        contains both chemical shift and their corresponding structural information 
+        for a total of 5,270 proteins. Glutton database has a hierarchical system of three tiers
         (levels of resolution) that permit customization of the database for specific applications: 
         for structural ensembles of IDPs, or for protein structure determination and prediction of 
         well folded structures. And, most importantly, Glutton changes the structure classification 
