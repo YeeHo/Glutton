@@ -47,9 +47,20 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
  
 Part 3 of 4. Python libraries needed to run Glutton script
 
-        The Glutton script has been tested using Anaconda python distribution version 3.6.
-
+        The Glutton script has been tested using Anaconda python distribution version 3.6. 
         The Anaconda python package can be downloaded for free at: https://www.anaconda.com/download
+        
+        The compatibilty of Glutton script with Python 2.7 has NOT been evaluted. If you are using the default python  
+        in linux, you are most likely using python 2.7. You will have to manually sepcify the python 
+        interpretor as:
+        
+                /usr/bin/python3.5 Glutton_R1.0.py
+        
+        If you don't have pip installed, you will need to install pip as the following:
+        
+                sudo apt install python3-pip (Ubuntu)
+        
+                sudo yum install python3-pip (centos/redhat)
 
         Python libraries needed to run Glutton script:
 
