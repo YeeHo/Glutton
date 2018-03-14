@@ -28,7 +28,8 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
 
         Step3. Put the input chemical shift file (in NMRSTAR 3.0 format) in the subfolder "cs"
 
-        Step4. change the input.txt to set parameters to determine the candidate pool
+        Step4. change the input.txt to set parameters to determine the characteristics of the structure 
+        ensemble to be generated.
 
                 bmr15398.str   # name of the input chemical shift file 
                 2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution (recommended 2)
