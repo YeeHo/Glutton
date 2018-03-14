@@ -60,7 +60,7 @@ Part 3 of 4. Python libraries needed to run Glutton script
         
                 sudo apt install python3-pip (Ubuntu)
         
-                sudo yum install python3-pip (centos/redhat)
+                sudo yum install python3-pip (centos/redhat) - not tested
 
         Python libraries needed to run Glutton script:
 
