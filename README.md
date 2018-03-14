@@ -3,6 +3,9 @@ Please take 5 minutes to read this brief readme file before running the Glutton 
 
 Part 1 of 4. Introduction of Glutton
 
+        The Glutton database and a complement python script are developed for constructing structure 
+        ensembles solely based on backbone chemical shift data for flexible proteins.
+        
         The Glutton database that we have developed is specifically designed to fill a large void
         currently existing in the bioinformatics tools for the structural analysis of intrinsically
         disordered proteins (IDPs) based on experimental information, namely NMR. Our Glutton database 
