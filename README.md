@@ -32,10 +32,11 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
 
                 bmr15398.str   # name of the input chemical shift file 
                 2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution
-                10             # number of structures to be generated
+                200            # number of structures to be generated
                 0.5            # the selected width of the chemical shift distribution used to derive statistical distributions 
-                False          # use log of the density distributions of Phi and Psi 
+                0              # (recommended) don't use log of the density distributions of Phi and Psi 
                                # angles as probability function to generate angles
+                               # if set to 1, log(p) will be used to generate Phi and Psi angles
 
         NOTE: if there are insufficient data to generate distributions, the choice can be 
         [1]. use low-resolution database - LEVEL3;            
