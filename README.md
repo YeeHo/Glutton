@@ -31,9 +31,9 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         Step4. change the input.txt to set parameters to determine the candidate pool
 
                 bmr15398.str   # name of the input chemical shift file 
-                2              # (recommended 2) LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution
-                200            # number of structures to be generated
-                0.5            # (recommended 0.5) the selected width of the chemical shift distribution used to derive statistical distributions 
+                2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution (recommended 2)
+                200            # Number of structures to be generated (recommended 2500 or more)
+                0.5            # the selected width of the chemical shift distribution used to derive statistical distributions (recommended 0.5)
                 0              # (recommended 0) don't use log of the density distributions of Phi and Psi 
                                # angles as probability function to generate angles
                                # if set to 1, log(p) will be used to generate Phi and Psi angles
