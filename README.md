@@ -56,7 +56,7 @@ Part 3 of 4. Python libraries needed to run Glutton script
         
                 /usr/bin/python3.5 Glutton_R1.0.py
         
-        If you don't have pip installed, you will need to install pip as the following:
+        If you use the default python in Linux and don't have pip command, you will need to install pip as the following:
         
                 sudo apt install python3-pip (Ubuntu)
         
