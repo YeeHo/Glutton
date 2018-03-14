@@ -39,7 +39,7 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
                                # if set to 1, log(p) will be used to generate Phi and Psi angles
 
         NOTE: if there are insufficient data to generate distributions, the choice can be 
-        [1]. use low-resolution database - LEVEL3;            
+        [1]. use the low-resolution database - LEVEL3;            
         [2]. increase the selected width of the chemical shift distribution. 
  
         Step5. use the following command to run script:
