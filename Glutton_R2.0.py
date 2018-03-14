@@ -306,7 +306,7 @@ def glutton():
     """"Generate structure ensemble based on the input.txt."""
     inputPara = readinput()
     print("Input Parameters: ", inputPara)
-    print("Number of the generated tructure will be updated every 100")
+    print("Number of the generated structure will be updated every 100")
     seq, Phi, Psi, NumofStructGen = GeneratePhiPsi(inputPara[0], int(inputPara[1]),
             int(inputPara[2]), float(inputPara[3]), int(inputPara[4]))
 
