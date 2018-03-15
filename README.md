@@ -35,7 +35,7 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         Step4. change the input.txt to set parameters to determine the characteristics of the structure 
         ensemble to be generated.
 
-                bmr15398.str   # name of the input chemical shift file 
+                bmr15398.str   # name of the input chemical shift file in cs folder
                 2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution 
                 200            # Number of structures to be generated
                 0.5            # the selected width of the chemical shift distribution used to derive 
