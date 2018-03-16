@@ -12,13 +12,13 @@ Part 1 of 4. Introduction of Glutton
         Our Glutton database contains both chemical shifts and their corresponding structural information 
         for a total of 5,270 proteins. The Glutton database is organized hierarchically in three tiers
         (levels of resolution) that permit customization of the database for specific applications: 
-        for calculations of structural ensembles of IDPs, or for determination and prediction of well
-        folded protein structures. And, most importantly, Glutton interprets chemical shifts as ensemble 
+        for calculations of structural ensembles of IDPs, or for determination and prediction of well-folded 
+        protein structures. And, most importantly, Glutton interprets chemical shifts as ensemble 
         averages, and thus calculates conformational distributions from chemical shift datasets. 
         These distributions permit the straightforward determination of a maximally broad structural 
         ensemble consistent with the data, and thus it optimizes sampling of the conformational space that is
         available to the IDP. These ensembles provide a realistic description of the conformational 
-        heterogeneity and structural propensities of IDPs, but they can also be used as starting point 
+        heterogeneity and structural propensities of IDPs, but they can also be used as starting points 
         for the refinement of protein structure determination (adding additional experimental information)
         or protein prediction (incorporating a molecular force-field).
 
@@ -27,11 +27,11 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         Step1. Put database files (LEVEL*.dat), Glutton.py and input.txt files in the same folder.
 
         Step2. If there are no subfolders named "cs" and "PDBOUT" within this folder, create them before 
-                running Glutton script.
+                running the Glutton script.
 
         Step3. Put the input chemical shift file (in NMRSTAR 3.0 format) in the subfolder "cs"
 
-        Step4. change the input.txt to set parameters to determine the characteristics of the structure 
+        Step4. Change the input.txt to set parameters to determine the characteristics of the structure 
         ensemble to be generated.
 
                 bmr15398.str   # name of the input chemical shift file in cs folder
@@ -45,7 +45,7 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         [1]. use the low-resolution database - LEVEL3;            
         [2]. increase the selected width of the chemical shift distribution. 
  
-        Step5. use the following command to run script:
+        Step5. Use the following command to run the Glutton script:
 
                 python Glutton.py
  
@@ -55,7 +55,7 @@ Part 3 of 4. Python libraries needed to run this script
         The Anaconda python package can be downloaded for free from: https://www.anaconda.com/download
         
         The compatibility of the Glutton script with Python version 2.7 has NOT been evaluated. If you are using the 
-        default python in linux, you are most likely using python version 2.7. You will have to manually sepcify 
+        default python in linux, you are most likely using python version 2.7. You will have to manually specify 
         the python interpreter as:
         
                 /usr/bin/python3.5 Glutton_R1.0.py
