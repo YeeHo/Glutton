@@ -3,21 +3,20 @@ Please take 5 minutes to read this brief readme file before running the Glutton 
 
 Part 1 of 4. Introduction of Glutton
 
-        The Glutton database and a complement python script are developed for constructing structure 
+        The Glutton database and a complementary python script are developed for constructing structure 
         ensembles solely based on backbone chemical shift data for flexible proteins.
         
-        The Glutton database that we have developed is specifically designed to fill a large void
+        The Glutton database that we have developed is specifically designed to fill a void
         currently existing in the bioinformatics tools for the structural analysis of intrinsically
-        disordered proteins (IDPs) based on experimental information, namely NMR. Our Glutton database 
-        contains both chemical shift and their corresponding structural information 
-        for a total of 5,270 proteins. Glutton database has a hierarchical system of three tiers
+        disordered proteins (IDPs) based on experimental information, namely Nuclear Magnetic Resonance (NMR). 
+        Our Glutton database contains both chemical shifts and their corresponding structural information 
+        for a total of 5,270 proteins. The Glutton database is organized hierarchically in three tiers
         (levels of resolution) that permit customization of the database for specific applications: 
-        for structural ensembles of IDPs, or for protein structure determination and prediction of 
-        well folded structures. And, most importantly, Glutton changes the structure classification 
-        paradigm from the conventional one (one set of chemical shifts to one structure) to one that 
-        interprets chemical shifts as ensemble averages, and thus calculates conformational distributions 
-        from chemical shift datasets. These distributions permit the quick determination of maximally broad 
-        structural ensembles consistent with the data, and thus optimal sampling of the conformational space 
+        for calculations of structural ensembles of IDPs, or for determination and prediction of well
+        folded protein structures. And, most importantly, Glutton interprets chemical shifts as ensemble 
+        averages, and thus calculates conformational distributions from chemical shift datasets. 
+        These distributions permit the straightforward determination of a maximally broad structural 
+        ensemble consistent with the data, and thus it optimizes sampling of the conformational space that is
         available to the IDP. These ensembles provide a realistic description of the conformational 
         heterogeneity and structural propensities of IDPs, but they can also be used as starting point 
         for the refinement of protein structure determination (adding additional experimental information)
@@ -25,7 +24,7 @@ Part 1 of 4. Introduction of Glutton
 
 Part 2 of 4. Use Glutton script to generate structure ensembles based on chemical shifts
 
-        Step1. Put database files (LEVEL*.dat), Glutton_R1.0.py and input.txt files in the same folder.
+        Step1. Put database files (LEVEL*.dat), Glutton.py and input.txt files in the same folder.
 
         Step2. If there are no subfolders named "cs" and "PDBOUT" within this folder, create them before 
                 running Glutton script.
@@ -42,33 +41,33 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
                                # statistical distributions
 
 
-        NOTE: if there are insufficient data to generate distributions, the choice can be 
+        NOTE: if the available data are insufficient to generate distributions, you can either: 
         [1]. use the low-resolution database - LEVEL3;            
         [2]. increase the selected width of the chemical shift distribution. 
  
         Step5. use the following command to run script:
 
-                python Glutton_R1.0.py
+                python Glutton.py
  
-Part 3 of 4. Python libraries needed to run Glutton script
+Part 3 of 4. Python libraries needed to run this script
 
-        The Glutton script has been tested using Anaconda python distribution version 3.6. 
-        The Anaconda python package can be downloaded for free at: https://www.anaconda.com/download
+        The Glutton script has been tested using the Anaconda python distribution version 3.6. 
+        The Anaconda python package can be downloaded for free from: https://www.anaconda.com/download
         
-        The compatibilty of Glutton script with Python 2.7 has NOT been evaluted. If you are using the 
-        default python in linux, you are most likely using python 2.7. You will have to manually sepcify 
-        the python interpretor as:
+        The compatibility of the Glutton script with Python version 2.7 has NOT been evaluated. If you are using the 
+        default python in linux, you are most likely using python version 2.7. You will have to manually sepcify 
+        the python interpreter as:
         
                 /usr/bin/python3.5 Glutton_R1.0.py
         
-        If you use the default python in Linux and don't have pip command, you will need to install pip 
-        as the following:
+        If you use the default python in Linux and don't have the pip command, you will need to install pip 
+        as follows:
         
                 sudo apt install python3-pip (Ubuntu)
         
                 sudo yum install python3-pip (centos/redhat) - not tested
 
-        Python libraries needed to run Glutton script:
+        The python libraries needed to run Glutton script are:
 
         [1]. Install Biopython
 
