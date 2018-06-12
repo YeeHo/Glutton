@@ -61,7 +61,7 @@ Part 3 of 4. Python libraries needed to run this script
         default python in linux, you are most likely using python version 2.7. You will have to manually specify 
         the python interpreter as:
         
-                /usr/bin/python3.5 Glutton_R1.0.py
+                /usr/bin/python3.5 Glutton.py
         
         If you use the default python in Linux and don't have the pip command, you will need to install pip 
         as follows:
