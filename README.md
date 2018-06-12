@@ -19,10 +19,10 @@ Part 1 of 4. Introduction of Glutton
         averages, and thus calculates conformational distributions from chemical shift datasets. 
         These distributions permit the straightforward determination of a maximally broad structural 
         ensemble consistent with the data, and thus it optimizes sampling of the conformational space that is
-        available to the IDP. These ensembles provide a realistic description of the conformational 
-        heterogeneity and structural propensities of IDPs, but they can also be used as starting points 
-        for the refinement of protein structure determination (adding additional experimental information)
-        or protein prediction (incorporating a molecular force-field).
+        available to the IDP as shown in the above plot. These ensembles provide a realistic description
+        of the conformational heterogeneity and structural propensities of IDPs, but they can also be used 
+        as starting points for the refinement of protein structure determination (adding additional 
+        experimental information) or protein prediction (incorporating a molecular force-field).
 
 Part 2 of 4. Use Glutton script to generate structure ensembles based on chemical shifts
 
