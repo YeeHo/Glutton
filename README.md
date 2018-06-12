@@ -1,4 +1,5 @@
 ![alt text](https://github.com/YeeHo/Glutton/blob/master/NCBD-49.png)
+Figure 1. Examples of side-by-side comparison of the Phi and Psi angle distributions based on 10,000 structures obtained from 10-us MD simulations(left) and Glutton (right) for ALA-49 (bottom) in NCBD. 
 
 # Glutton
 Please take 5 minutes to read this brief readme file before running the Glutton script. 
