@@ -1,3 +1,5 @@
+![alt text](https://github.com/YeeHo/Glutton/blob/master/NCBD-49.png)
+
 # Glutton
 Please take 5 minutes to read this brief readme file before running the Glutton script. 
 
