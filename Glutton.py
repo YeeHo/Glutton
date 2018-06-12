@@ -15,6 +15,7 @@ from PeptideBuilder import Geometry
 import PeptideBuilder
 from os import path
 from Bio.PDB import *
+import matplotlib.pyplot as plt
 
 resdict = {'ALA': 'A', 'CYS': 'C', 'ASP': 'D', 'GLU': 'E', 'PHE': 'F',
            'GLY': 'G', 'HIS': 'H', 'ILE': 'I', 'LYS': 'K', 'LEU': 'L',
@@ -169,6 +170,18 @@ def GetSTD(df, ResID):
         dfstd[i] = dx[ATOMS[i]].std()
     return dfstd
 
+def wavg(avg, weight):
+    """ http://stackoverflow.com/questions/10951341/pandas-dataframe-aggregate-function-using-multiple-columns
+    In rare instance, we may not have weights, so just return the mean. Customize this if your business case
+    should return otherwise.
+    """
+    if weight.sum()==0:
+        return math.nan
+    try:
+        return (avg * weight).sum() / weight.sum()
+    except ZeroDivisionError:
+        return math.nan
+
 def GetCandidate(inputCS, ResNum, df, cutoff, weight):
     """Differences between exp and database records."""
     ATOMS = ['H1','N1','HA1','CA1','Cp1']
@@ -191,9 +204,36 @@ def GetCandidate(inputCS, ResNum, df, cutoff, weight):
 
     return df_New, len(df_New.index), inputCS['RES1'].iloc[ResNum]
 
+def GetPhiPsiCandidate(seq, inputPhiPsi, ResNum, df, cutoff):
+    """Differences between exp and database records."""
+
+    df_New = df[df['RES1'] == seq[ResNum]]
+    # print(inputPhiPsi[['PHI','PSI']].iloc[ResNum].values)
+    with warnings.catch_warnings():
+         warnings.simplefilter("ignore")
+         df_New[['PHI1','PSI1']] = df_New[['PHI','PSI']] - inputPhiPsi[['PHI','PSI']].iloc[ResNum].values
+         df_New[['PHI1','PSI1']] = df_New[['PHI1','PSI1']].abs()
+
+    df_New = df_New[df_New['PHI1'] < cutoff]
+    df_New = df_New[df_New['PSI1'] < cutoff]
+
+    x = plt.hist(df_New[df_New['H']<100.0 ]['H'],bins=50)
+    df_H = wavg(x[1][0:50],x[0])
+    x = plt.hist(df_New[df_New['N']<250.0]['N'],bins=50)
+    df_N = wavg(x[1][0:50],x[0])
+    x = plt.hist(df_New[df_New['HA']<100.0]['HA'],bins=50)
+    df_HA = wavg(x[1][0:50],x[0])
+    x = plt.hist(df_New[df_New['CA']<250.0]['CA'],bins=50)
+    df_CA = wavg(x[1][0:50],x[0])
+    x = plt.hist(df_New[df_New['Cp']<250.0]['Cp'],bins=50)
+    df_Cp = wavg(x[1][0:50],x[0])
+    print(x[0])
+    return df_H, df_N, df_HA, df_CA, df_Cp
+
 def AnglesCDF(data, NumofStructGen):
     """"Calculate CDF for data."""
-    hist, bins = np.histogram(data, bins=36)
+    data = data[data<359.0]
+    hist, bins = np.histogram(data, bins=72)
     hist[hist==0] = 1
     bin_midpoints = bins[:-1] + np.diff(bins)/2
     cdf = np.cumsum(hist)
@@ -207,6 +247,50 @@ def AnglesCDF(data, NumofStructGen):
 #######################################################
 #  Section 3: Generate structures from distributions  #
 #######################################################
+def build_phi_psi_model(pdb_filename):
+    parser=PDBParser()
+    structure=parser.get_structure('sample', \
+                                    path.join('./PDB/', pdb_filename))
+    model=structure[0]
+    chain=model['A']
+    seq=""
+    phi_diangle=[]
+    psi_diangle=[]
+    omega_diangle=[]
+    for res in chain:
+        if(res.get_resname() in resdict.keys()):
+
+            seq+=resdict[res.get_resname()]
+            if(len(seq)==1):
+                N_prev=res['N']
+                CA_prev=res['CA']
+                C_prev=res['C']
+            else:
+                n1=N_prev.get_vector()
+                ca1=CA_prev.get_vector()
+                c1=C_prev.get_vector()
+
+                C_curr=res['C']
+                N_curr=res['N']
+                CA_curr=res['CA']
+
+                c=C_curr.get_vector()
+                n=N_curr.get_vector()
+                ca=CA_curr.get_vector()
+
+                psi= calc_dihedral(n1, ca1, c1, n) ##goes to current res
+                omega= calc_dihedral(ca1, c1, n, ca)
+                phi= calc_dihedral(c1, n, ca, c) ##goes to current res
+
+                phi_diangle.append(phi*180.0/math.pi)
+                psi_diangle.append(psi*180.0/math.pi)
+                # omega_diangle.append(omega*180.0/math.pi)
+
+                N_prev=res['N']
+                CA_prev=res['CA']
+                C_prev=res['C']
+
+    return seq, phi_diangle, psi_diangle
 
 def GeneratePhiPsi(CSFile, databaseLevel, NumofStructGen, Weight):
     """"Generate Phi and Psi angle ensembles based on statistics."""
@@ -239,18 +323,65 @@ def GeneratePhiPsi(CSFile, databaseLevel, NumofStructGen, Weight):
         cutoff = GetSTD(df,inputCSdf['RES1'].iloc[inum])
         dfx, xLen, ResID = GetCandidate(inputCSdf, inum, dfSS, cutoff, Weight)
 
-        Phi[inum,:] = AnglesCDF(dfx['PHI'].values, NumofStructGen)
-        Psi[inum,:] = AnglesCDF(dfx['PSI'].values, NumofStructGen)
+        dfxPhi = dfx.copy()
+        dfxPsi = dfx.copy()
+
+        Phi[inum,:] = AnglesCDF(dfxPhi['PHI'].values, NumofStructGen)
+        Psi[inum,:] = AnglesCDF(dfxPsi['PSI'].values, NumofStructGen)
 
     return seq, Phi, Psi, NumofStructGen
 
+def GenerateCS(PDBFile, cutoff, databaseLevel):
+    """"Generate Phi and Psi angle ensembles based on statistics."""
+    seq, phi_d, psi_d = build_phi_psi_model(PDBFile)
+
+    if databaseLevel == 1:
+        df = LoadData('LEVEL1_ALL_20180116.dat')
+    elif databaseLevel == 2:
+        df = LoadData('LEVEL2_ALL_20180116.dat')
+    elif databaseLevel == 3:
+        df = LoadData('LEVEL3_ALL_20180116.dat')
+    else:
+        print('Please input a number among 1, 2, 3 to select among  \
+                three precision levels:')
+        print('1. High resolution database')
+        print('2. Medium resolution database')
+        print('3. Low resolution database')
+
+    dfSS = df.copy()
+    seqLen = len(seq)
+    phi_diangle = np.asarray([360.0] + phi_d)
+    psi_diangle = np.asarray(psi_d + [360.0])
+
+    PhiPsi = pd.DataFrame(data=np.column_stack((phi_diangle, psi_diangle)), \
+         columns=['PHI','PSI'], dtype=np.float)
+
+    CSOUT = np.zeros(seqLen*5).reshape(5,seqLen)
+    seqList = list(seq)
+    for inum in range(seqLen):
+        df_H, df_N, df_HA, df_CA, df_Cp = GetPhiPsiCandidate(seqList, PhiPsi, inum, dfSS, cutoff)
+        CSOUT[0,inum] = df_H
+        CSOUT[1,inum] = df_N
+        CSOUT[2,inum] = df_HA
+        CSOUT[3,inum] = df_CA
+        CSOUT[4,inum] = df_Cp
+
+    return CSOUT
+
+
 def constructStr(seq, Phi, Psi, NumofStructGen):
     """"Construct structures based on given Phi and Psi angle ensembles."""
+    SeqLen = len(Phi[:,0])
     iCount = 0;
+    PhiOut = np.zeros((int(SeqLen), int(NumofStructGen)))
+    PsiOut = np.zeros((int(SeqLen), int(NumofStructGen)))
     for j in range(10*NumofStructGen):
         model_structure_phi_psi= PeptideBuilder.make_structure(seq, Phi[:,j], Psi[:,j])
         Clashes = disCheck(model_structure_phi_psi)
         if Clashes == False:
+            PhiOut[:,iCount] = Phi[:,j]
+            PsiOut[:,iCount] = Psi[:,j]
+
             iCount = iCount + 1
             if iCount % 100 == 0:
                print(iCount)
@@ -260,6 +391,7 @@ def constructStr(seq, Phi, Psi, NumofStructGen):
             out.save('./PDBOUT/'+name)
         if iCount > (NumofStructGen-1):
             break
+    return PhiOut, PsiOut
 
 def disCheck(structure):
     """"Check Ca overlap."""
@@ -281,15 +413,14 @@ def readinput():
     """"Read input parameters."""
     f = open('input.txt')
     boards = []
-    for i in range(5):
+    for i in range(6):
         boards.append(f.readline().strip())
     return boards
 
-def glutton():
+def glutton_cs2str(inputPara):
     """"Generate structure ensemble based on the input.txt."""
-    inputPara = readinput()
-    print("Input Parameters: ", inputPara)
-    print("Number of the generated tructure will be updated every 100")
+
+    print("Number of the generated structure will be updated every 100")
     seq, Phi, Psi, NumofStructGen = GeneratePhiPsi(inputPara[0], int(inputPara[1]),
             int(inputPara[2]), float(inputPara[3]))
 
@@ -312,8 +443,135 @@ def glutton():
         NCBDPsi[42:43,:] = [14.3591021712]*10*int(inputPara[2])
         NCBDPsi[43:,:] = Psi[41:,:]
 
-        constructStr(seqncbd, NCBDPhi, NCBDPsi, int(inputPara[2]))
+        PhiOutX, PsiOutX = constructStr(seqncbd, NCBDPhi, NCBDPsi, int(inputPara[2]))
     else:
-        constructStr(seq, Phi, Psi, int(inputPara[2]))
+        PhiOutX, PsiOutX = constructStr(seq, Phi, Psi, int(inputPara[2]))
+
+    PhiOut = np.asarray(Phi)
+    PsiOut = np.asarray(Psi)
+
+    if int(inputPara[4]) == 0:
+        np.savetxt('PhiAngles.txt', PhiOut, fmt='%7.2f')
+        np.savetxt('PsiAngles.txt', PsiOut, fmt='%7.2f')
+    elif int(inputPara[4]) == 1:
+        np.savetxt('PhiAngles.txt', PhiOutX, fmt='%7.2f')
+        np.savetxt('PsiAngles.txt', PsiOutX, fmt='%7.2f')
+
+def glutton_str2cs(inputPara):
+    """"Generate chemical shift distributions based on the input.txt."""
+
+    CSOUT = GenerateCS(inputPara[0], float(inputPara[3]), int(inputPara[1]))
+    seq, phi_d, psi_d = build_phi_psi_model(inputPara[0])
+    SeqLen = len(seq)
+    seqList = list(seq)
+
+    if inputPara[0].strip() == '2kkj_clean.pdb':
+        dx, iLen = LoadNMRCS('bmr15398.str', './cs/')
+        with warnings.catch_warnings():
+             warnings.simplefilter("ignore")
+             inputCSdf = dx.convert_objects(convert_numeric=True)
+
+        seqList = list(seq)
+
+        FileID = open('PDB_to_CS_results.txt','w+')
+        for i in range(SeqLen):
+            print('{0:>3d} {1:>2s} {2:>6.2f} {3:>6.2f} {4:>6.2f} {5:>6.2f} {6:>6.2f} \
+                  '.format(i+1, seqList[i], CSOUT[0,i], CSOUT[1,i], CSOUT[2,i], CSOUT[3,i], CSOUT[4,i]), file=FileID)
+
+        for i in range(len(seq)):
+            if i < 17:
+                print('{0:>3d} {1:>2s} {2:>2s}'.format(i+1, seqList[i], inputCSdf['RES1'].iloc[i]), end=' ')
+                if np.abs(inputCSdf['H'].iloc[i]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[0,i] - inputCSdf['H'].iloc[i])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['N'].iloc[i]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[1,i] - inputCSdf['N'].iloc[i])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['HA'].iloc[i]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[2,i] - inputCSdf['HA'].iloc[i])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['CA'].iloc[i]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[3,i] - inputCSdf['CA'].iloc[i])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['Cp'].iloc[i]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[4,i] - inputCSdf['Cp'].iloc[i])))
+                else:
+                    print('{0:>6.2f}'.format(math.nan))
+
+            elif i> 17 and i < 41:
+                print('{0:>3d} {1:>2s} {2:>2s}'.format(i+1, seqList[i], inputCSdf['RES1'].iloc[i-1]), end=' ')
+                if np.abs(inputCSdf['H'].iloc[i-1]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[0,i] - inputCSdf['H'].iloc[i-1])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['N'].iloc[i-1]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[1,i] - inputCSdf['N'].iloc[i-1])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['HA'].iloc[i-1]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[2,i] - inputCSdf['HA'].iloc[i-1])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['CA'].iloc[i-1]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[3,i] - inputCSdf['CA'].iloc[i-1])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['Cp'].iloc[i-1]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[4,i] - inputCSdf['Cp'].iloc[i-1])))
+                else:
+                    print('{0:>6.2f}'.format(math.nan))
+            elif i > 41:
+                print('{0:>3d} {1:>2s} {2:>2s}'.format(i+1, seqList[i], inputCSdf['RES1'].iloc[i-2]), end=' ')
+                if np.abs(inputCSdf['H'].iloc[i-2]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[0,i] - inputCSdf['H'].iloc[i-2])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['N'].iloc[i-2]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[1,i] - inputCSdf['N'].iloc[i-2])),  end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['HA'].iloc[i-2]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[2,i] - inputCSdf['HA'].iloc[i-2])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['CA'].iloc[i-2]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[3,i] - inputCSdf['CA'].iloc[i-2])), end=' ')
+                else:
+                    print('{0:>6.2f}'.format(math.nan),  end=' ')
+
+                if np.abs(inputCSdf['Cp'].iloc[i-2]) < 250.0:
+                    print('{0:>6.2f}'.format((CSOUT[4,i] - inputCSdf['Cp'].iloc[i-2])))
+                else:
+                    print('{0:>6.2f}'.format(math.nan))
+
+    else:
+        for i in range(SeqLen):
+            print('{0:>3d} {1:>2s} {2:>6.2f} {3:>6.2f} {4:>6.2f} {5:>6.2f} {6:>6.2f} \
+                  '.format(i+1, seqList[i], CSOUT[0,i], CSOUT[1,i], CSOUT[2,i], CSOUT[3,i], CSOUT[4,i],))
+
+
+def glutton():
+    inputPara = readinput()
+    print("Input Parameters: ", inputPara)
+
+    if int(inputPara[5]) == 0:
+        glutton_str2cs(inputPara)
+    else:
+        glutton_cs2str(inputPara)
 
 glutton()
