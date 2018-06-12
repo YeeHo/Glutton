@@ -37,9 +37,9 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
                 bmr15398.str   # name of the input chemical shift file in cs folder
                 2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution 
                 200            # Number of structures to be generated
-                0.5            # the selected width of the chemical shift distribution used to derive 
-                               # statistical distributions
-
+                0.5            # the selected width of the chemical shift distribution to derive statistical distributions
+                1              # 0 - Output all Phi and Psi angles before size exclusion; 1 - output Phi and Psi angles used in all the outputed structures
+                1              # 0 - predict chemical shifts based on PDB structure; 1 - predict strcutures based on chemical shifts
 
         NOTE: if the available data are insufficient to generate distributions, you can either: 
         [1]. use the low-resolution database - LEVEL3;            
@@ -77,7 +77,7 @@ Part 3 of 4. Python libraries needed to run this script
   
         [2]. Install PeptideBuilder
 
-                pip install PeptideBuilder
+                pip3 install PeptideBuilder
 
         PeptideBuilder webpage: https://github.com/mtien/PeptideBuilder
   
@@ -87,13 +87,13 @@ Part 3 of 4. Python libraries needed to run this script
 
         [3]. Install nmrstarlib
         
-                pip install nmrstarlib
+                pip3 install nmrstarlib
 
         nmrstarlib webpage: https://github.com/MoseleyBioinformaticsLab/nmrstarlib        
 
         [4]. Install other python libraries such as numpy, pandas if you don't have them.
         
-                pip install numpy pandas
+                pip3 install numpy pandas
 
 Part 4 of 4. Protein Chemical Shift - Structure Database (Glutton database)
 
