@@ -25,14 +25,14 @@ Part 1 of 4. Introduction of Glutton
         as starting points for the refinement of protein structure determination (adding additional 
         experimental information) or protein prediction (incorporating a molecular force-field).
 
-Part 2 of 4. Use Glutton script to generate structure ensembles based on chemical shifts
+Part 2 of 4. Use Glutton script to generate structure ensembles based on chemical shifts or vice versa.
 
         Step1. Put database files (LEVEL*.dat), Glutton.py and input.txt files in the same folder.
 
         Step2. If there are no subfolders named "cs" and "PDBOUT" within this folder, create them before 
                 running the Glutton script.
 
-        Step3. Put the input chemical shift file (in NMRSTAR 3.0 format) in the subfolder "cs"
+        Step3. Put the input chemical shift file (in NMRSTAR 3.0 format) in the subfolder "cs" or pdb file in subfolder "pdb"
 
         Step4. Change the input.txt to set parameters to determine the characteristics of the structure 
         ensemble to be generated.
@@ -47,6 +47,8 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         NOTE: if the available data are insufficient to generate distributions, you can either: 
         [1]. use the low-resolution database - LEVEL3;            
         [2]. increase the selected width of the chemical shift distribution. 
+        [3]. Output Phi and Psi angle files are named "PhiAngles.txt" and "PsiAngles.txt". Each row contains all
+             the generated angles corresponding to one residue.
  
         Step5. Use the following command to run the Glutton script:
 
