@@ -39,8 +39,8 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
 
                 bmr15398.str   # name of the input chemical shift file in cs folder
                 2              # LEVEL of the database, 1 - high-resolution; 2 - medium-resolution; 3 - low-resolution 
-                200            # Number of structures to be generated
-                0.5            # the selected width of the chemical shift distribution to derive statistical distributions
+                200            # Number of structures to be generated (when predicting cs from a structure, set it to 1)
+                0.5            # the selected width of the chemical shift distribution to derive statistical distributions (or the phi/psi angle range if predicting cs from a structure)
                 1              # 0 - Output all Phi and Psi angles before size exclusion; 1 - output Phi and Psi angles used in all the outputed structures
                 1              # 0 - predict chemical shifts based on PDB structure; 1 - predict strcutures based on chemical shifts
 
