@@ -524,7 +524,7 @@ def glutton_str2cs(inputPara):
     print('{0:>6s} {1:>3s} {2:>6s} {3:>6s} {4:>6s} {5:>6s} {6:>6s}'.format( \
         'RESNUM', 'RES', 'H', 'N', 'HA', 'CA', "C'"))
     for i in range(SeqLen):
-        print('{0:>3d} {1:>2s} {2:>6.2f} {3:>6.2f} {4:>6.2f} {5:>6.2f} {6:>6.2f} \
+        print('{0:>6d} {1:>3s} {2:>6.2f} {3:>6.2f} {4:>6.2f} {5:>6.2f} {6:>6.2f} \
               '.format(i+1, seqList[i], CSOUT[0,i], CSOUT[1,i], CSOUT[2,i], CSOUT[3,i], CSOUT[4,i],))
 
 
