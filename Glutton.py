@@ -1,4 +1,3 @@
-# V4.4
 import pandas as pd
 import numpy as np
 import nmrstarlib
@@ -26,6 +25,7 @@ resdict = {'ALA': 'A', 'CYS': 'C', 'ASP': 'D', 'GLU': 'E', 'PHE': 'F',
 
 PDBdir = "./pdb/"
 
+# V4.4
 ##########################################################################
 # Section 1: Get Chemical shift data from BMRB File (NMRSTAR 3.1 format) #
 ##########################################################################
