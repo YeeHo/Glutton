@@ -53,7 +53,11 @@ Part 2 of 4. Use Glutton script to generate structure ensembles based on chemica
         Step5. Use the following command to run the Glutton script:
 
                 python Glutton.py
- 
+
+        NOTE: Example input files for Cs to structure is "input_cs2str_ncbd.txt" and for structure to CS is
+         "input_str2cs_ncbd.txt". To use anyone of them as input file for Glutton, please change the file name
+         to "input.txt" and put in the same folder as Glutton.py.
+
 Part 3 of 4. Python libraries needed to run this script
 
         The Glutton script has been tested using the Anaconda python distribution version 3.6. 
