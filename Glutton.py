@@ -8,7 +8,7 @@ from Bio.PDB.Residue import *
 from Bio.PDB.Chain import *
 from Bio.PDB.Model import *
 from Bio.PDB.Structure import *
-from Bio.PDB.Vector import *
+#from Bio.PDB.Vector import *
 from Bio.PDB.Entity import*
 import math
 from PeptideBuilder import Geometry
@@ -353,7 +353,7 @@ def GeneratePhiPsi(CSFile, databaseLevel, NumofStructGen, Weight):
     dx, iLen = LoadNMRCS(CSFile, './cs/')
     with warnings.catch_warnings():
          warnings.simplefilter("ignore")
-         inputCSdf = dx.convert_objects(convert_numeric=True)
+         inputCSdf = dx.apply(pd.to_numeric,errors="ignore")
     NumList = dx['RESNUMCS'].values
     seq = dx['RES1'].values
 
